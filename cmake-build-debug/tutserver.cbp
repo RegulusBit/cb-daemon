@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tutserver"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\utilities\;CMake Files\src\zclib\;CMake Files\src\zmq\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/reza/development/zkp/Tutorial/server/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/reza/development/zkp/Tutorial/server/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/reza/development/zkp/Tutorial/server/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tutserver">
+				<Option output="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/tutserver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/zkp/Tutorial/server/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/utilities"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/zclib"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/zmq"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutserver"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tutserver/fast">
+				<Option output="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/tutserver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/zkp/Tutorial/server/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/utilities"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/zclib"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/zmq"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutserver/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="utilities">
+				<Option output="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/libutilities.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/utilities"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/zclib"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 utilities"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="utilities/fast">
+				<Option output="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/libutilities.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/utilities"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/zclib"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 utilities/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zclib">
+				<Option output="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib/libzclib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/zclib"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/utilities"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 zclib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zclib/fast">
+				<Option output="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib/libzclib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/zclib"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/utilities"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 zclib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zmq">
+				<Option output="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zmq/libzmq.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zmq"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/zmq"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/utilities"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/zclib"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 zmq"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zmq/fast">
+				<Option output="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zmq/libzmq.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zmq"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/zmq"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/utilities"/>
+					<Add directory="/home/reza/development/zkp/Tutorial/server/src/zclib"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 zmq/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/reza/development/zkp/Tutorial/server/src/serverd.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/zkp/Tutorial/server/src/utilities/logger.cpp">
+			<Option target="utilities"/>
+		</Unit>
+		<Unit filename="/home/reza/development/zkp/Tutorial/server/src/utilities/logger.h">
+			<Option target="utilities"/>
+		</Unit>
+		<Unit filename="/home/reza/development/zkp/Tutorial/server/src/utilities/utils.cpp">
+			<Option target="utilities"/>
+		</Unit>
+		<Unit filename="/home/reza/development/zkp/Tutorial/server/src/utilities/utils.h">
+			<Option target="utilities"/>
+		</Unit>
+		<Unit filename="/home/reza/development/zkp/Tutorial/server/src/zclib/address.cpp">
+			<Option target="zclib"/>
+		</Unit>
+		<Unit filename="/home/reza/development/zkp/Tutorial/server/src/zclib/address.h">
+			<Option target="zclib"/>
+		</Unit>
+		<Unit filename="/home/reza/development/zkp/Tutorial/server/src/zmq/messaging_server.cpp">
+			<Option target="zmq"/>
+		</Unit>
+		<Unit filename="/home/reza/development/zkp/Tutorial/server/src/zmq/messaging_server.h">
+			<Option target="zmq"/>
+		</Unit>
+		<Unit filename="/home/reza/development/zkp/Tutorial/server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/zkp/Tutorial/server/src/utilities/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\utilities\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/zkp/Tutorial/server/src/zclib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\zclib\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/zkp/Tutorial/server/src/zmq/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\zmq\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

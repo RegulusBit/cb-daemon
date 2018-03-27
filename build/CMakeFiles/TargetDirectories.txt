@@ -1,0 +1,12 @@
+/home/reza/development/zkp/Tutorial/peer/build/CMakeFiles/edit_cache.dir
+/home/reza/development/zkp/Tutorial/peer/build/CMakeFiles/rebuild_cache.dir
+/home/reza/development/zkp/Tutorial/peer/build/CMakeFiles/tutpeer.dir
+/home/reza/development/zkp/Tutorial/peer/build/src/utilities/CMakeFiles/edit_cache.dir
+/home/reza/development/zkp/Tutorial/peer/build/src/utilities/CMakeFiles/rebuild_cache.dir
+/home/reza/development/zkp/Tutorial/peer/build/src/utilities/CMakeFiles/utilities.dir
+/home/reza/development/zkp/Tutorial/peer/build/src/zclib/CMakeFiles/edit_cache.dir
+/home/reza/development/zkp/Tutorial/peer/build/src/zclib/CMakeFiles/rebuild_cache.dir
+/home/reza/development/zkp/Tutorial/peer/build/src/zclib/CMakeFiles/zclib.dir
+/home/reza/development/zkp/Tutorial/peer/build/src/zmq/CMakeFiles/edit_cache.dir
+/home/reza/development/zkp/Tutorial/peer/build/src/zmq/CMakeFiles/rebuild_cache.dir
+/home/reza/development/zkp/Tutorial/peer/build/src/zmq/CMakeFiles/zmq.dir

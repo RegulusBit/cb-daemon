@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/reza/development/zkp/Tutorial/server/src/zclib/address.cpp
+address.h
+/home/reza/development/zkp/Tutorial/server/src/zclib/address.h
+
+/home/reza/development/zkp/Tutorial/server/src/zclib/address.h
+
