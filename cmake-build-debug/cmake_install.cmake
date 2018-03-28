@@ -1,4 +1,4 @@
-# Install script for directory: /home/reza/development/zkp/Tutorial/server
+# Install script for directory: /home/mhghasemi/development/c++/cb-daemon
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/cmake_install.cmake")
-  include("/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib/cmake_install.cmake")
-  include("/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zmq/cmake_install.cmake")
+  include("/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities/cmake_install.cmake")
+  include("/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/zclib/cmake_install.cmake")
+  include("/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/zmq/cmake_install.cmake")
 
 endif()
 
@@ -48,5 +48,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/reza/development/zkp/Tutorial/server/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

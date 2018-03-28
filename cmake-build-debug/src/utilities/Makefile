@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/mhghasemi/development/clion-2017.3.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/mhghasemi/development/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/development/zkp/Tutorial/server
+CMAKE_SOURCE_DIR = /home/mhghasemi/development/c++/cb-daemon
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/development/zkp/Tutorial/server/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/reza/development/zkp/Tutorial/server/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/mhghasemi/development/clion-2017.3.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/mhghasemi/development/clion-2017.3.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/zkp/Tutorial/server/cmake-build-debug/CMakeFiles /home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/CMakeFiles/progress.marks
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/zkp/Tutorial/server/cmake-build-debug/CMakeFiles 0
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities/CMakeFiles/progress.marks
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/clean
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/preinstall
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/preinstall
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/utilities/CMakeFiles/utilities.dir/rule:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/CMakeFiles/utilities.dir/rule
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/CMakeFiles/utilities.dir/rule
 .PHONY : src/utilities/CMakeFiles/utilities.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ utilities: src/utilities/CMakeFiles/utilities.dir/rule
 
 # fast build rule for target.
 utilities/fast:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/build
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/build
 .PHONY : utilities/fast
 
 logger.o: logger.cpp.o
@@ -131,7 +131,7 @@ logger.o: logger.cpp.o
 
 # target to build an object file
 logger.cpp.o:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/logger.cpp.o
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/logger.cpp.o
 .PHONY : logger.cpp.o
 
 logger.i: logger.cpp.i
@@ -140,7 +140,7 @@ logger.i: logger.cpp.i
 
 # target to preprocess a source file
 logger.cpp.i:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/logger.cpp.i
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/logger.cpp.i
 .PHONY : logger.cpp.i
 
 logger.s: logger.cpp.s
@@ -149,7 +149,7 @@ logger.s: logger.cpp.s
 
 # target to generate assembly for a file
 logger.cpp.s:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/logger.cpp.s
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/logger.cpp.s
 .PHONY : logger.cpp.s
 
 utils.o: utils.cpp.o
@@ -158,7 +158,7 @@ utils.o: utils.cpp.o
 
 # target to build an object file
 utils.cpp.o:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/utils.cpp.o
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/utils.cpp.o
 .PHONY : utils.cpp.o
 
 utils.i: utils.cpp.i
@@ -167,7 +167,7 @@ utils.i: utils.cpp.i
 
 # target to preprocess a source file
 utils.cpp.i:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/utils.cpp.i
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
 utils.s: utils.cpp.s
@@ -176,7 +176,7 @@ utils.s: utils.cpp.s
 
 # target to generate assembly for a file
 utils.cpp.s:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/utils.cpp.s
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
 # Help Target
@@ -205,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

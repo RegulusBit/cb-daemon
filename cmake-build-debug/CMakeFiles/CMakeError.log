@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/reza/development/zkp/Tutorial/server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_769b9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_769b9.dir/build.make CMakeFiles/cmTC_769b9.dir/build
-make[1]: Entering directory '/home/reza/development/zkp/Tutorial/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_769b9.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_769b9.dir/CheckSymbolExists.c.o   -c /home/reza/development/zkp/Tutorial/server/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_769b9
-/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_769b9.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_769b9.dir/CheckSymbolExists.c.o  -o cmTC_769b9 
-CMakeFiles/cmTC_769b9.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_c43d7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c43d7.dir/build.make CMakeFiles/cmTC_c43d7.dir/build
+make[1]: Entering directory '/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c43d7.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c43d7.dir/CheckSymbolExists.c.o   -c /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c43d7
+/home/mhghasemi/development/clion-2017.3.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c43d7.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_c43d7.dir/CheckSymbolExists.c.o  -o cmTC_c43d7 
+CMakeFiles/cmTC_c43d7.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_769b9.dir/build.make:97: recipe for target 'cmTC_769b9' failed
-make[1]: *** [cmTC_769b9] Error 1
-make[1]: Leaving directory '/home/reza/development/zkp/Tutorial/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_769b9/fast' failed
-make: *** [cmTC_769b9/fast] Error 2
+CMakeFiles/cmTC_c43d7.dir/build.make:97: recipe for target 'cmTC_c43d7' failed
+make[1]: *** [cmTC_c43d7] Error 1
+make[1]: Leaving directory '/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c43d7/fast' failed
+make: *** [cmTC_c43d7/fast] Error 2
 
-File /home/reza/development/zkp/Tutorial/server/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/reza/development/zkp/Tutorial/server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ec71a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ec71a.dir/build.make CMakeFiles/cmTC_ec71a.dir/build
-make[1]: Entering directory '/home/reza/development/zkp/Tutorial/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ec71a.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ec71a.dir/CheckFunctionExists.c.o   -c /home/reza/CLion/clion-2017.3.3/bin/cmake/share/cmake-3.9/Modules/CheckFunctionExists.c
-Linking C executable cmTC_ec71a
-/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec71a.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_ec71a.dir/CheckFunctionExists.c.o  -o cmTC_ec71a -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_790ab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_790ab.dir/build.make CMakeFiles/cmTC_790ab.dir/build
+make[1]: Entering directory '/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_790ab.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_790ab.dir/CheckFunctionExists.c.o   -c /home/mhghasemi/development/clion-2017.3.3/bin/cmake/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_790ab
+/home/mhghasemi/development/clion-2017.3.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_790ab.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_790ab.dir/CheckFunctionExists.c.o  -o cmTC_790ab -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_ec71a.dir/build.make:97: recipe for target 'cmTC_ec71a' failed
-make[1]: *** [cmTC_ec71a] Error 1
-make[1]: Leaving directory '/home/reza/development/zkp/Tutorial/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_ec71a/fast' failed
-make: *** [cmTC_ec71a/fast] Error 2
+CMakeFiles/cmTC_790ab.dir/build.make:97: recipe for target 'cmTC_790ab' failed
+make[1]: *** [cmTC_790ab] Error 1
+make[1]: Leaving directory '/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_790ab/fast' failed
+make: *** [cmTC_790ab/fast] Error 2
 
 

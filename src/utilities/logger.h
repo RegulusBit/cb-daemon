@@ -1,26 +1,65 @@
 #ifndef LOGGER_H
 #define LOGGER_H
 
-#include <boost/log/core.hpp>
-#include <boost/log/trivial.hpp>
-#include <boost/log/expressions.hpp>
-#include <boost/log/sinks/text_file_backend.hpp>
-#include <boost/log/utility/setup/file.hpp>
-#include <boost/log/utility/setup/common_attributes.hpp>
-#include <boost/log/sources/severity_logger.hpp>
-#include <boost/log/sources/record_ostream.hpp>
-#include <boost/log/sources/logger.hpp>
-#include <boost/log/sources/record_ostream.hpp>
-#include <boost/log/sources/global_logger_storage.hpp>
+// Logger.h
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <string>
+#include <mutex>
 
-namespace src = boost::log::sources;
-namespace logging = boost::log;
-namespace sinks = boost::log::sinks;
-namespace keywords = boost::log::keywords;
 
-src::logger_mt& init(void);
+#define LOGGER Logger::instance()
 
-BOOST_LOG_INLINE_GLOBAL_LOGGER_DEFAULT(my_logger, src::logger_mt)
+// Definition of a multithread safe singleton logger class
+class Logger
+{
+public:
+    static const std::string kLogLevelDebug;
+    static const std::string kLogLevelInfo;
+    static const std::string kLogLevelError;
 
+    // Returns a reference to the singleton Logger object
+    static Logger& instance();
+
+    // Logs a single message at the given log level
+    void log(const std::string& inMessage,
+             const std::string& inLogLevel);
+
+    // Logs a vector of messages at the given log level
+    void log(const std::vector<std::string>& inMessages,
+             const std::string& inLogLevel);
+
+protected:
+    // Static variable for the one-and-only instance
+    static Logger* pInstance;
+
+    // Constant for the filename
+    static const char* const kLogFileName;
+
+    // Data member for the output stream
+    std::ofstream mOutputStream;
+
+    // Embedded class to make sure the single Logger
+    // instance gets deleted on program shutdown.
+    friend class Cleanup;
+    class Cleanup
+    {
+    public:
+        ~Cleanup();
+    };
+
+    // Logs message. The thread should own a lock on sMutex
+    // before calling this function.
+    void logHelper(const std::string& inMessage,
+                   const std::string& inLogLevel);
+
+private:
+    Logger();
+    virtual ~Logger();
+    Logger(const Logger&);
+    Logger& operator=(const Logger&);
+    static std::mutex sMutex;
+};
 
 #endif

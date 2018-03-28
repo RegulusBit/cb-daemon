@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/mhghasemi/development/clion-2017.3.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/mhghasemi/development/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/development/zkp/Tutorial/server
+CMAKE_SOURCE_DIR = /home/mhghasemi/development/c++/cb-daemon
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/development/zkp/Tutorial/server/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/utilities/CMakeFiles/utilities.dir/depend.make
@@ -59,16 +59,16 @@ include src/utilities/CMakeFiles/utilities.dir/flags.make
 
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: src/utilities/CMakeFiles/utilities.dir/flags.make
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/zkp/Tutorial/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/utilities/CMakeFiles/utilities.dir/utils.cpp.o"
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/utilities.dir/utils.cpp.o -c /home/reza/development/zkp/Tutorial/server/src/utilities/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/utilities/CMakeFiles/utilities.dir/utils.cpp.o"
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/utilities.dir/utils.cpp.o -c /home/mhghasemi/development/c++/cb-daemon/src/utilities/utils.cpp
 
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utilities.dir/utils.cpp.i"
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/zkp/Tutorial/server/src/utilities/utils.cpp > CMakeFiles/utilities.dir/utils.cpp.i
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mhghasemi/development/c++/cb-daemon/src/utilities/utils.cpp > CMakeFiles/utilities.dir/utils.cpp.i
 
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utilities.dir/utils.cpp.s"
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/zkp/Tutorial/server/src/utilities/utils.cpp -o CMakeFiles/utilities.dir/utils.cpp.s
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mhghasemi/development/c++/cb-daemon/src/utilities/utils.cpp -o CMakeFiles/utilities.dir/utils.cpp.s
 
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.o.requires:
 
@@ -83,16 +83,16 @@ src/utilities/CMakeFiles/utilities.dir/utils.cpp.o.provides.build: src/utilities
 
 src/utilities/CMakeFiles/utilities.dir/logger.cpp.o: src/utilities/CMakeFiles/utilities.dir/flags.make
 src/utilities/CMakeFiles/utilities.dir/logger.cpp.o: ../src/utilities/logger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/zkp/Tutorial/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/utilities/CMakeFiles/utilities.dir/logger.cpp.o"
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/utilities.dir/logger.cpp.o -c /home/reza/development/zkp/Tutorial/server/src/utilities/logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/utilities/CMakeFiles/utilities.dir/logger.cpp.o"
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/utilities.dir/logger.cpp.o -c /home/mhghasemi/development/c++/cb-daemon/src/utilities/logger.cpp
 
 src/utilities/CMakeFiles/utilities.dir/logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utilities.dir/logger.cpp.i"
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/zkp/Tutorial/server/src/utilities/logger.cpp > CMakeFiles/utilities.dir/logger.cpp.i
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mhghasemi/development/c++/cb-daemon/src/utilities/logger.cpp > CMakeFiles/utilities.dir/logger.cpp.i
 
 src/utilities/CMakeFiles/utilities.dir/logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utilities.dir/logger.cpp.s"
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/zkp/Tutorial/server/src/utilities/logger.cpp -o CMakeFiles/utilities.dir/logger.cpp.s
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mhghasemi/development/c++/cb-daemon/src/utilities/logger.cpp -o CMakeFiles/utilities.dir/logger.cpp.s
 
 src/utilities/CMakeFiles/utilities.dir/logger.cpp.o.requires:
 
@@ -117,9 +117,9 @@ src/utilities/libutilities.a: src/utilities/CMakeFiles/utilities.dir/utils.cpp.o
 src/utilities/libutilities.a: src/utilities/CMakeFiles/utilities.dir/logger.cpp.o
 src/utilities/libutilities.a: src/utilities/CMakeFiles/utilities.dir/build.make
 src/utilities/libutilities.a: src/utilities/CMakeFiles/utilities.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/reza/development/zkp/Tutorial/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libutilities.a"
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities && $(CMAKE_COMMAND) -P CMakeFiles/utilities.dir/cmake_clean_target.cmake
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/utilities.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libutilities.a"
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities && $(CMAKE_COMMAND) -P CMakeFiles/utilities.dir/cmake_clean_target.cmake
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/utilities.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/utilities/CMakeFiles/utilities.dir/build: src/utilities/libutilities.a
@@ -132,10 +132,10 @@ src/utilities/CMakeFiles/utilities.dir/requires: src/utilities/CMakeFiles/utilit
 .PHONY : src/utilities/CMakeFiles/utilities.dir/requires
 
 src/utilities/CMakeFiles/utilities.dir/clean:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities && $(CMAKE_COMMAND) -P CMakeFiles/utilities.dir/cmake_clean.cmake
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities && $(CMAKE_COMMAND) -P CMakeFiles/utilities.dir/cmake_clean.cmake
 .PHONY : src/utilities/CMakeFiles/utilities.dir/clean
 
 src/utilities/CMakeFiles/utilities.dir/depend:
-	cd /home/reza/development/zkp/Tutorial/server/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/development/zkp/Tutorial/server /home/reza/development/zkp/Tutorial/server/src/utilities /home/reza/development/zkp/Tutorial/server/cmake-build-debug /home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities /home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mhghasemi/development/c++/cb-daemon /home/mhghasemi/development/c++/cb-daemon/src/utilities /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/utilities/CMakeFiles/utilities.dir/depend
 

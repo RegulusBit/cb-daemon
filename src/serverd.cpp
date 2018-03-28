@@ -1,179 +1,131 @@
 #include <iostream>
-#include <string>
 #include "utils.h"
-#include "logger.h"
 #include "messaging_server.h"
 #include <thread>
 #include <queue>
-#include "zhelpers.hpp"
+#include "plog/Log.h"
+#include <plog/Appenders/ColorConsoleAppender.h>
 
-using namespace std;
 
-static const int WORKER_NUM = 10;
-
-void log(std::string strng)
-{
-    std::cout << strng << std::endl;
-}
-
-src::logger_mt& lg = init();
-
-void worker_routine(void* cntxt)
-{
-    log("worker created!");
-    zmq::context_t *cntxtPtr = (zmq::context_t*)cntxt;
-    zmq::socket_t socket(*cntxtPtr, ZMQ_REQ);
-    socket.connect("ipc://workers.ipc");
-
-    int count = 0;
-    s_send(socket, "Ready!");
-
-    while(true)
-    {
-        std::string address = s_recv(socket);
-
-        {
-            assert(s_recv(socket).size() == 0);
-        }
-
-        std::string message = s_recv(socket);
-
-        if(message.find("Kill!") == 0)
-        {
-            s_sendmore(socket, address);
-            s_sendmore(socket, "");
-            s_send(socket, "OK!killing!");
-            std::cout << "Completed tasks: " << count << std::endl;
-            break;
-        }
-        message.append(" Received. thanks for your consideration!");
-
-        s_sendmore(socket, address);
-        s_sendmore(socket, "");
-        s_send(socket, message);
-        count++;
-    }
-    log("worker destroyed!");
-}
-
-void client_routine()
-{
-    log("client created!");
-    zmq::context_t cntxt(1);
-    zmq::socket_t socket(cntxt, ZMQ_REQ);
-
-    s_set_id(socket);
-    socket.connect("tcp://localhost:5990");
-
-    uint64_t deadline = s_clock() + 10000;
-
-    while(true)
-    {
-
-        s_send(socket, "Hello");
-        std::string reply = s_recv(socket);
-        //log(reply);
-
-        if(s_clock() > deadline)
-            {
-                s_send(socket, "Kill!");
-                std::string reply = s_recv(socket);
-                log(reply);
-                break;
-            }
-    }
-    log("client destroyed!");
-}
 
 int main(int argc , char* argv[])
 {
-    std::thread twrk[WORKER_NUM];
-    std::thread tcli[WORKER_NUM];
+    // using plog library for logging purposes.
+    //https://github.com/SergiusTheBest/plog
 
-    int client_nbr = WORKER_NUM;
+    plog::init(plog::verbose, "log.out", 1000000, 5);
+    static plog::ColorConsoleAppender<plog::TxtFormatter> consoleAppender;
+    plog::init(plog::verbose, &consoleAppender);
+
+    LOG_VERBOSE << "The daemon main process starts.";
+
+    pid_t pid; //process ID
+    pid_t sid; // session ID
+
+    //EnvironmentSetup(pid, sid);
 
     zmq::context_t context(1);
-
-    BOOST_LOG(lg) << "Server starting point. initialization...";
-    log("Server initialization...");
-
     zmq::socket_t frontend(context, ZMQ_ROUTER);
-    zmq::socket_t backend(context, ZMQ_ROUTER);
+    zmq::socket_t backend (context, ZMQ_ROUTER);
 
-    std::queue<std::string> worker_queue;
+    frontend.bind("tcp://*:9155");    //  For clients
+    backend.bind ("tcp://*:5556");    //  For internal workers
 
-    backend.bind("ipc://workers.ipc");
-    frontend.bind("tcp://*:5990");
 
-    zmq::pollitem_t items[]=
-            {
-                    {(void*)backend, 0, ZMQ_POLLIN, 0},
-                    {(void*)frontend, 0, ZMQ_POLLIN, 0}
-            };
+    //  Queue of available workers
+    queue<worker_t> workerQueue;
 
-    for(int i=0 ; i < WORKER_NUM ; i++)
+    std::thread worker_thread[WORKER_NUM];
+
+    for(int i=0; i < WORKER_NUM; i++)
     {
-        tcli[i] = std::thread(client_routine);
-        twrk[i] = std::thread(worker_routine, (void*)&context);
+        worker_thread[i] = std::thread(worker_t::worker_routine, &context);
+        LOG_INFO << "The" << i << "th worker thread created.";
     }
+
+    //  Send out heartbeats at regular intervals
+    int64_t heartbeat_at = s_clock () + HEARTBEAT_INTERVAL;
 
     while(true)
     {
-        //important!
-        if (worker_queue.size())
-            zmq::poll(&items[0], 2, -1);
-        else
-            zmq::poll(&items[0], 1, -1);
-
-
-        if(items[0].revents && ZMQ_POLLIN)
-        {
-            worker_queue.push(s_recv(backend));
-            assert(s_recv(backend).size() == 0);
-
-            std::string client_address = s_recv(backend);
-            if(client_address.compare("Ready!") != 0)
-            {
-                assert(s_recv(backend).size() == 0);
-                std::string message = s_recv(backend);
-                s_sendmore(frontend, client_address);
-                s_sendmore(frontend, "");
-                s_send(frontend, message);
-
-
-            }
-
+        zmq::pollitem_t items[] = {
+                {(void*)backend,  0, ZMQ_POLLIN, 0},
+                {(void*)frontend, 0, ZMQ_POLLIN, 0}
+        };
+        //  Poll frontend only if we have available workers
+        if (workerQueue.size()) {
+            zmq::poll(items, 2, HEARTBEAT_INTERVAL);
+        } else {
+            LOG_INFO << "The worker queue is empty.";
+            zmq::poll(items, 1, HEARTBEAT_INTERVAL);
         }
 
-        if(items[1].revents && ZMQ_POLLIN)
-        {
-            std::string client_address = s_recv(frontend);
-            {
-                std::string empty = s_recv(frontend);
-                assert(empty.size() == 0);
+        // worker
+
+        //  Handle worker activity on backend
+        if (items[0].revents & ZMQ_POLLIN) {
+            zmsg msg(backend);
+
+            //the unwrap method somehow drops two frames(parts)
+            //from message which is not correct
+            //so the pop method hard coded instead.
+            //std::string identity(msg.unwrap());
+            std::string identity = (char*)msg.pop_front().c_str();
+
+            //  Return reply to client if it's not a control message
+            if (msg.parts () == 1) {
+                if (strcmp (msg.address (), "READY") == 0) {
+                    workerQueue._delete(identity);
+                    workerQueue._append(identity);
+                }
+                else
+                {
+                    if (strcmp(msg.address(), "HEARTBEAT") == 0) {
+                        workerQueue._refresh(identity);
+                    } else{
+                        LOG_WARNING << "invalid message from " << identity;
+                        msg.dump ();
+                    }
+                }
             }
-
-            std::string request = s_recv(frontend);
-
-            std::string worker_addr = worker_queue.front();
-            worker_queue.pop();
-
-            s_sendmore(backend, worker_addr);
-            s_sendmore(backend, "");
-            s_sendmore(backend, client_address);
-            s_sendmore(backend, "");
-            s_send(backend, request);
-
+            else{
+                LOG_INFO << "Message received from client " << identity << " and sent to worker";
+                msg.send(frontend);
+                workerQueue._append(identity);
+            }
         }
 
+        // worker
+
+        //client
+
+        if (items [1].revents & ZMQ_POLLIN) {
+            //  Now get next client request, route to next worker
+            zmsg msg(frontend);
+            std::string identity = std::string(workerQueue._dequeue());
+            msg.push_front((char*)identity.c_str());
+            msg.send(backend);
+        }
+
+        //client
+
+        //  Send heartbeats to idle workers if it's time
+        if (s_clock () > heartbeat_at) {
+            for (std::vector<worker_t>::iterator it = workerQueue.get_queue().begin();
+                 it < workerQueue.get_queue().end(); it++) {
+                zmsg msg ("HEARTBEAT");
+                msg.wrap (it->get_identity().c_str(), NULL);
+                msg.send (backend);
+            }
+            heartbeat_at = s_clock () + HEARTBEAT_INTERVAL;
+        }
+        workerQueue._purge();
     }
 
-    for(int i=0 ; i < WORKER_NUM ; i++)
+    for(int i=0; i < WORKER_NUM; i++)
     {
-        tcli[i].join();
-        twrk[i].join();
+        worker_thread[i].join();
     }
-
-
+    LOG_INFO << "daemon main process finished.";
     return 0;
 }

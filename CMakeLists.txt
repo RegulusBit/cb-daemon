@@ -39,7 +39,7 @@ add_executable(tutserver src/serverd.cpp)
 target_link_libraries(tutserver utilities zclib zmq ${Boost_LIBRARIES} ${ZeroMQ_LIBRARY} ${CMAKE_THREAD_LIBS_INIT})
 
 ## add the include directory to our compile directives
-target_include_directories(tutserver PUBLIC ${ZeroMQ_INCLUDE_DIR})
+target_include_directories(tutserver PUBLIC src/plog/include ${ZeroMQ_INCLUDE_DIR} )
 
 #
 #

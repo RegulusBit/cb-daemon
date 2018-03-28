@@ -8,44 +8,40 @@
 
 ../src/zclib/address.h
 
-/home/reza/development/zkp/Tutorial/server/src/utilities/logger.cpp
+/home/mhghasemi/development/c++/cb-daemon/src/utilities/logger.cpp
+stdexcept
+-
 logger.h
-/home/reza/development/zkp/Tutorial/server/src/utilities/logger.h
+/home/mhghasemi/development/c++/cb-daemon/src/utilities/logger.h
 
-/home/reza/development/zkp/Tutorial/server/src/utilities/logger.h
-boost/log/core.hpp
+/home/mhghasemi/development/c++/cb-daemon/src/utilities/logger.h
+iostream
 -
-boost/log/trivial.hpp
+fstream
 -
-boost/log/expressions.hpp
+vector
 -
-boost/log/sinks/text_file_backend.hpp
+string
 -
-boost/log/utility/setup/file.hpp
--
-boost/log/utility/setup/common_attributes.hpp
--
-boost/log/sources/severity_logger.hpp
--
-boost/log/sources/record_ostream.hpp
--
-boost/log/sources/logger.hpp
--
-boost/log/sources/record_ostream.hpp
--
-boost/log/sources/global_logger_storage.hpp
+mutex
 -
 
-/home/reza/development/zkp/Tutorial/server/src/utilities/utils.cpp
+/home/mhghasemi/development/c++/cb-daemon/src/utilities/utils.cpp
 utils.h
-/home/reza/development/zkp/Tutorial/server/src/utilities/utils.h
+/home/mhghasemi/development/c++/cb-daemon/src/utilities/utils.h
 
-/home/reza/development/zkp/Tutorial/server/src/utilities/utils.h
+/home/mhghasemi/development/c++/cb-daemon/src/utilities/utils.h
 string
 -
 vector
 -
 cstdint
+-
+unistd.h
+-
+sys/stat.h
+-
+stdlib.h
 -
 iostream
 -
@@ -56,5 +52,5 @@ ctime
 chrono
 -
 address.h
-/home/reza/development/zkp/Tutorial/server/src/utilities/address.h
+/home/mhghasemi/development/c++/cb-daemon/src/utilities/address.h
 

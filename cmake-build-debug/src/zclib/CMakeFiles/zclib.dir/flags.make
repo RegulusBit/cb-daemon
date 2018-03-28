@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = -DBOOST_LOG_DYN_LINK
 
-CXX_INCLUDES = -I/home/reza/development/zkp/Tutorial/server/src/zclib -I/home/reza/development/zkp/Tutorial/server/src/utilities 
+CXX_INCLUDES = -I/home/mhghasemi/development/c++/cb-daemon/src/zclib -I/home/mhghasemi/development/c++/cb-daemon/src/utilities 
 

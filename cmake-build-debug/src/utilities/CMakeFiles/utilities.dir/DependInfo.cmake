@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/reza/development/zkp/Tutorial/server/src/utilities/logger.cpp" "/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/logger.cpp.o"
-  "/home/reza/development/zkp/Tutorial/server/src/utilities/utils.cpp" "/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/utils.cpp.o"
+  "/home/mhghasemi/development/c++/cb-daemon/src/utilities/logger.cpp" "/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/logger.cpp.o"
+  "/home/mhghasemi/development/c++/cb-daemon/src/utilities/utils.cpp" "/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,7 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/reza/development/zkp/Tutorial/server/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/DependInfo.cmake"
+  "/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

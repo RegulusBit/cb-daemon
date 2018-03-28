@@ -5,11 +5,16 @@
 #include <string>
 #include <vector>
 #include <cstdint>
+#include <unistd.h>
+#include <sys/stat.h>
+#include <stdlib.h>
 #include <iostream>
 #include <sstream>
 #include <ctime>
 #include <chrono>
 #include "address.h"
+
+void EnvironmentSetup(pid_t& pid , pid_t& sid);
 
 class Account {
 private:
