@@ -1,6 +1,6 @@
 #include "messaging_server.h"
 
-
+#include <string.h>
 
 void worker_t::set_identity(std::string idnt){identity = idnt;}
 std::string worker_t::get_identity(void){return identity;}
@@ -24,7 +24,7 @@ zmq::socket_t* worker_t::s_worker_socket(zmq::context_t &context) {
     worker->setsockopt(ZMQ_LINGER, &linger, sizeof(linger));
 
     //  Tell queue we're ready for work
-    LOG_INFO << " (" << identity << ") worker ready" << std::endl;
+    LOG_INFO << " (" << identity << ") worker ready";
     s_send(*worker, "READY");
 
     return worker;
@@ -60,17 +60,19 @@ void worker_t::worker_routine(void* context)
 
             if (msg.parts() == 3) {
                 //  Process the request and send reply
-                LOG_INFO << "normal reply - " << msg.body() << std::endl;
-                msg.send(*worker);
+                LOG_INFO << "normal reply - " << msg.body();
+                zmsg reply(msg);
+                reply.body_set(processRequest(msg.body()).c_str());
+                reply.send(*worker);
                 liveness = HEARTBEAT_LIVENESS;
-                sleep (1);              //  Do some heavy work
+                //  Do some heavy work
             }
             else {
                 if(msg.parts () == 1 && strcmp (msg.body (), "HEARTBEAT") == 0) {
                     liveness = HEARTBEAT_LIVENESS;
                 }
                 else {
-                    LOG_INFO << "invalid message" << std::endl;
+                    LOG_INFO << "invalid message";
                     msg.dump ();
                 }
             }
@@ -79,8 +81,8 @@ void worker_t::worker_routine(void* context)
         }
         else
         if (--liveness == 0) {
-            LOG_WARNING << "heartbeat failure, can't reach queue" << std::endl;
-            LOG_WARNING << "reconnecting in " << interval << " msec…" << std::endl;
+            LOG_WARNING << "heartbeat failure, can't reach queue";
+            LOG_WARNING << "reconnecting in " << interval << " msec…";
             s_sleep(interval);
 
             if(interval < INTERVAL_MAX) {
@@ -160,7 +162,7 @@ void queue<T>::_refresh(std::string identity)
         }
     }
     if (!found) {
-        LOG_ERROR << "worker " << identity << " not ready" << std::endl;
+        LOG_ERROR << "worker " << identity << " not ready";
     }
 }
 
@@ -183,6 +185,7 @@ void queue<T>::_purge()
             it = original_queue.erase(it)-1;
         }
     }
+    //LOG_INFO << "number of available workers: " << original_queue.size();
 }
 
 template <class T>

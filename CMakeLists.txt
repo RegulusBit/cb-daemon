@@ -15,6 +15,7 @@ add_subdirectory(src/zmq)
 find_package(PkgConfig)
 find_package(Boost REQUIRED COMPONENTS log)
 find_package(Threads)
+pkg_check_modules(JSONCPP jsoncpp)
 
 
 ## use pkg-config to get hints for 0mq locations
@@ -36,15 +37,15 @@ find_library(ZeroMQ_LIBRARY
 
 
 add_executable(tutserver src/serverd.cpp)
-target_link_libraries(tutserver utilities zclib zmq ${Boost_LIBRARIES} ${ZeroMQ_LIBRARY} ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(tutserver utilities zclib zmq ${JSONCPP_LIBRARIES} ${Boost_LIBRARIES} ${ZeroMQ_LIBRARY} ${CMAKE_THREAD_LIBS_INIT})
 
 ## add the include directory to our compile directives
 target_include_directories(tutserver PUBLIC src/plog/include ${ZeroMQ_INCLUDE_DIR} )
 
 #
-#
-#
-#sudo apt-get install libzmq3-dev
+#dependencies:
+#  sudo apt-get install libjsoncpp-dev (cpp JSON Parser)
+#  sudo apt-get install libzmq3-dev
 #
 #
 #

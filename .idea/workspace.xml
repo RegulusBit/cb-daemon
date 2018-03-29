@@ -14,91 +14,38 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f703311-3dbe-43e1-b48d-c17aa5909cc6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="8f703311-3dbe-43e1-b48d-c17aa5909cc6" name="Default" comment="add completed messaging methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_C.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_C.bin" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_CXX.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_CXX.bin" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeSystem.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeSystem.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.out" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.out" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/a.out" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/a.out" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutpeer.dir/CXX.includecache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutpeer.dir/DependInfo.cmake" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutpeer.dir/build.make" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutpeer.dir/cmake_clean.cmake" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutpeer.dir/depend.internal" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutpeer.dir/depend.make" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutpeer.dir/flags.make" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutpeer.dir/link.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutpeer.dir/progress.make" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutpeer.dir/src/peerd.cpp.o" afterPath="" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/CXX.includecache" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/depend.internal" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/depend.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/flags.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/link.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/src/serverd.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tutserver.dir/src/serverd.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/CMakeDirectoryInformation.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/CXX.includecache" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/build.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/depend.internal" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/depend.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/logger.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/logger.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/utils.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/utils.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utilities/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utilities/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utilities/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utilities/cmake_install.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/utilities/libutilities.a" afterPath="$PROJECT_DIR$/cmake-build-debug/src/utilities/libutilities.a" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/CXX.includecache" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/address.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/address.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/depend.internal" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zclib/CMakeFiles/zclib.dir/progress.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zclib/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zclib/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zclib/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zclib/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zclib/libzclib.a" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zclib/libzclib.a" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/progress.marks" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/CXX.includecache" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/build.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/depend.internal" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/depend.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/progress.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zmq/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zmq/cmake_install.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.o" afterPath="" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/zmq/libzmq.a" afterPath="$PROJECT_DIR$/cmake-build-debug/src/zmq/libzmq.a" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tutserver" afterPath="$PROJECT_DIR$/cmake-build-debug/tutserver" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tutserver" afterPath="" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/tutserver.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/tutserver.cbp" />
-      <change beforePath="$PROJECT_DIR$/src/serverd.cpp" afterPath="$PROJECT_DIR$/src/serverd.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/logger.cpp" afterPath="$PROJECT_DIR$/src/utilities/logger.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/logger.h" afterPath="$PROJECT_DIR$/src/utilities/logger.h" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/CMakeLists.txt" afterPath="$PROJECT_DIR$/src/utilities/CMakeLists.txt" />
       <change beforePath="$PROJECT_DIR$/src/utilities/utils.cpp" afterPath="$PROJECT_DIR$/src/utilities/utils.cpp" />
       <change beforePath="$PROJECT_DIR$/src/utilities/utils.h" afterPath="$PROJECT_DIR$/src/utilities/utils.h" />
-      <change beforePath="$PROJECT_DIR$/src/zmq/CMakeLists.txt" afterPath="$PROJECT_DIR$/src/zmq/CMakeLists.txt" />
       <change beforePath="$PROJECT_DIR$/src/zmq/messaging_server.cpp" afterPath="$PROJECT_DIR$/src/zmq/messaging_server.cpp" />
       <change beforePath="$PROJECT_DIR$/src/zmq/messaging_server.h" afterPath="$PROJECT_DIR$/src/zmq/messaging_server.h" />
     </list>
@@ -116,19 +63,65 @@
       <file leaf-file-name="messaging_server.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zmq/messaging_server.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-468">
-              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="-180">
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messaging_server.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="messaging_server.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zmq/messaging_server.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3600">
-              <caret line="200" column="31" lean-forward="false" selection-start-line="200" selection-start-column="31" selection-end-line="200" selection-end-column="31" />
+            <state relative-caret-position="351">
+              <caret line="187" column="6" lean-forward="false" selection-start-line="187" selection-start-column="6" selection-end-line="187" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zmsg.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zmq/zmsg.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-248">
+              <caret line="314" column="39" lean-forward="false" selection-start-line="314" selection-start-column="39" selection-end-line="314" selection-end-column="39" />
+              <folding>
+                <element signature="e#57#80#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utilities/utils.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-211">
+              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/utilities/utils.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serverd.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/serverd.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="121" column="24" lean-forward="false" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,7 +131,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>not</find>
-      <find>not</find>
+      <find>norma</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,10 +145,8 @@
         <option value="$PROJECT_DIR$/src/depends/utils.cpp" />
         <option value="$PROJECT_DIR$/src/zclib/address.cpp" />
         <option value="$PROJECT_DIR$/src/zclib/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/utilities/utils.cpp" />
         <option value="$PROJECT_DIR$/src/zmq/messaging.h" />
         <option value="$PROJECT_DIR$/src/zmq/messaging.cpp" />
-        <option value="$PROJECT_DIR$/src/utilities/utils.h" />
         <option value="$PROJECT_DIR$/src/zclib/address.h" />
         <option value="$PROJECT_DIR$/src/peerd.cpp" />
         <option value="$PROJECT_DIR$/src/utilities/logger.cpp" />
@@ -163,10 +154,14 @@
         <option value="$PROJECT_DIR$/src/serverd.cpp" />
         <option value="$PROJECT_DIR$/src/plog/include/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/plog/include/plog/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/zmq/messaging_server.h" />
         <option value="$PROJECT_DIR$/src/zmq/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/zmq/messaging_server.h" />
+        <option value="$PROJECT_DIR$/src/utilities/utils.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/utilities/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/zmq/zmsg.hpp" />
         <option value="$PROJECT_DIR$/src/zmq/messaging_server.cpp" />
+        <option value="$PROJECT_DIR$/src/utilities/utils.cpp" />
       </list>
     </option>
   </component>
@@ -208,27 +203,6 @@
               <item name="tutserver" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="cb-daemon" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutserver" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="cb-daemon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutserver" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="cb-daemon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plog" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutserver" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="cb-daemon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plog" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="plog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tutserver" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
@@ -332,22 +306,32 @@
       <workItem from="1522150025285" duration="42000" />
       <workItem from="1522154875639" duration="8984000" />
       <workItem from="1522222359116" duration="16130000" />
-      <workItem from="1522267344646" duration="7399000" />
+      <workItem from="1522267344646" duration="8520000" />
+      <workItem from="1522308144394" duration="242000" />
+      <workItem from="1522308399774" duration="12381000" />
     </task>
+    <task id="LOCAL-00001" summary="add logging methods">
+      <created>1522274784039</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1522274784039</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70509000" />
+    <option name="totallyTimeSpent" value="84253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24905661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49784482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35173824" sideWeight="0.49810505" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34764826" sideWeight="0.49810505" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.50189495" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32822084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3179959" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -364,13 +348,13 @@
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36210525" sideWeight="0.49810505" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34842107" sideWeight="0.49810505" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947367" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.50189495" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842106" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3273684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49784482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -387,6 +371,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add logging methods" />
+    <MESSAGE value="add completed messaging methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="add completed messaging methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -517,13 +506,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zmq/messaging.h" />
     <entry file="file://$PROJECT_DIR$/src/zmq/messaging.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/utilities/utils.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/peerd.cpp" />
     <entry file="file://$PROJECT_DIR$/src/zmq/zhelpers.hpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -571,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="430" column="8" lean-forward="false" selection-start-line="430" selection-start-column="8" selection-end-line="430" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -579,7 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -587,23 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zmq/zmsg.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4320">
-          <caret line="240" column="52" lean-forward="false" selection-start-line="240" selection-start-column="25" selection-end-line="240" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utilities/utils.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,15 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="202" column="4" lean-forward="false" selection-start-line="202" selection-start-column="4" selection-end-line="202" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serverd.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -627,39 +581,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plog/include/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plog/include/plog/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="74" lean-forward="false" selection-start-line="0" selection-start-column="74" selection-end-line="0" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plog/include/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/src/plog/include/plog/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/src/plog/include/plog/Log.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utilities/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -667,15 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1116">
           <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,18 +608,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zmq/messaging_server.h">
+    <entry file="file://$PROJECT_DIR$/src/utilities/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="72">
+          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="60" lean-forward="false" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/utils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zmq/zmsg.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-248">
+          <caret line="314" column="39" lean-forward="false" selection-start-line="314" selection-start-column="39" selection-end-line="314" selection-end-column="39" />
+          <folding>
+            <element signature="e#57#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serverd.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="121" column="24" lean-forward="false" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zmq/messaging_server.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3600">
-          <caret line="200" column="31" lean-forward="false" selection-start-line="200" selection-start-column="31" selection-end-line="200" selection-end-column="31" />
+        <state relative-caret-position="351">
+          <caret line="187" column="6" lean-forward="false" selection-start-line="187" selection-start-column="6" selection-end-line="187" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zmq/messaging_server.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/utils.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
           <folding />
         </state>
       </provider>

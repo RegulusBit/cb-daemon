@@ -1,3 +1,4 @@
+
 #include "utils.h"
 
 
@@ -46,6 +47,25 @@ void EnvironmentSetup(pid_t& pid , pid_t& sid)
 }
 
 
+jsonParser::jsonParser(std::string json)
+{
+    Json::Reader rdr;
+    rdr.parse(json, rawJson);
+    header = rawJson.get("Method","UTF-8").asString();
+}
+
+std::string jsonParser::get_header()
+{
+    return header;
+}
+
+std::string jsonParser::get_parameter(std::string)
+{
+
+}
+
+
+
 Account::Account()
 {
     Balance = 100; // default value of deposited account.
@@ -72,5 +92,23 @@ void Wallet::add_account(Account& adding_account)
 {
     Account *temp = &adding_account;
     Accounts.push_back(temp);
+}
+
+
+
+
+std::string processRequest(std::string request)
+{
+    Json::FastWriter fstr;
+    Json::Value response;
+    jsonParser parser(request);
+    LOG_DEBUG << "method received: " << parser.get_header();
+
+
+
+    response["response"] = parser.get_header();
+    std::string res = fstr.write(response);
+    return res;
+
 }
 

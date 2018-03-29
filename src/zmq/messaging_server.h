@@ -2,11 +2,13 @@
 #define MESSAGING_SERVER_H
 
 #include "plog/Log.h"
+#include "utils.h"
 #include <plog/Appenders/ColorConsoleAppender.h>
 #include <zmq.hpp>
 #include <string>
 #include <iostream>
 #include <vector>
+#include <jsoncpp/json/json.h>
 #include "zmsg.hpp"
 #ifndef _WIN32
 #include <unistd.h>
