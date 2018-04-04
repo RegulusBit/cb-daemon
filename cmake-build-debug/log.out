@@ -1,0 +1,35 @@
+﻿2018-04-03 13:44:42.055 VERB  [5648] [main@20] The daemon main process starts.
+2018-04-03 13:44:42.058 INFO  [5648] [main@43] The0th worker thread created.
+2018-04-03 13:44:42.058 INFO  [5648] [main@43] The1th worker thread created.
+2018-04-03 13:44:42.058 INFO  [5651] [worker_t::s_worker_socket@27]  (0E0B-D49D) worker ready
+
+2018-04-03 13:44:42.058 INFO  [5648] [main@43] The2th worker thread created.
+2018-04-03 13:44:42.059 INFO  [5648] [main@43] The3th worker thread created.
+2018-04-03 13:44:42.059 INFO  [5653] [worker_t::s_worker_socket@27]  (0E0B-D49D) worker ready
+
+2018-04-03 13:44:42.059 INFO  [5648] [main@43] The4th worker thread created.
+2018-04-03 13:44:42.060 INFO  [5648] [main@59] The worker queue is empty.
+2018-04-03 13:44:42.060 INFO  [5654] [worker_t::s_worker_socket@27]  (0E0B-D49D) worker ready
+
+2018-04-03 13:44:42.060 INFO  [5655] [worker_t::s_worker_socket@27]  (035D-B236) worker ready
+
+2018-04-03 13:44:42.062 INFO  [5652] [worker_t::s_worker_socket@27]  (0E0B-D49D) worker ready
+
+2018-04-03 13:44:45.062 WARN  [5653] [worker_t::worker_routine@82] heartbeat failure, can't reach queue
+
+2018-04-03 13:44:45.062 WARN  [5653] [worker_t::worker_routine@83] reconnecting in 1000 msec…
+
+2018-04-03 13:44:45.063 WARN  [5654] [worker_t::worker_routine@82] heartbeat failure, can't reach queue
+
+2018-04-03 13:44:45.063 WARN  [5654] [worker_t::worker_routine@83] reconnecting in 1000 msec…
+
+2018-04-03 13:44:45.066 WARN  [5652] [worker_t::worker_routine@82] heartbeat failure, can't reach queue
+
+2018-04-03 13:44:45.066 WARN  [5652] [worker_t::worker_routine@83] reconnecting in 1000 msec…
+
+2018-04-03 13:44:46.063 INFO  [5653] [worker_t::s_worker_socket@27]  (B90A-7362) worker ready
+
+2018-04-03 13:44:46.064 INFO  [5654] [worker_t::s_worker_socket@27]  (D5A5-1C8F) worker ready
+
+2018-04-03 13:44:46.067 INFO  [5652] [worker_t::s_worker_socket@27]  (A6F3-BB4E) worker ready
+

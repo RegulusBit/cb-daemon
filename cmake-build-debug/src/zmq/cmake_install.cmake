@@ -1,4 +1,4 @@
-# Install script for directory: /home/mhghasemi/development/c++/cb-daemon/src/zmq
+# Install script for directory: /home/reza/development/conf-bank/cb-daemon/src/zmq
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -4,6 +4,20 @@
 src/utilities/CMakeFiles/utilities.dir/logger.cpp.o: ../src/utilities/logger.cpp
 src/utilities/CMakeFiles/utilities.dir/logger.cpp.o: ../src/utilities/logger.h
 
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/Appenders/ColorConsoleAppender.h
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/Appenders/ConsoleAppender.h
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/Appenders/IAppender.h
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/Appenders/RollingFileAppender.h
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/Converters/UTF8Converter.h
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/Formatters/CsvFormatter.h
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/Formatters/TxtFormatter.h
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/Init.h
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/Log.h
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/Logger.h
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/Record.h
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/Severity.h
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/Util.h
+src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/../plog/include/plog/WinApi.h
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/zclib/address.h
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/utils.cpp
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/utils.h

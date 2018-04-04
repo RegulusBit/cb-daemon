@@ -153,16 +153,28 @@ sstream
 -
 ctime
 -
+unordered_map
+-
 chrono
+-
+jsoncpp/json/value.h
+-
+jsoncpp/json/json.h
 -
 address.h
 ../src/utilities/address.h
+plog/Log.h
+../src/utilities/plog/Log.h
+plog/Appenders/ColorConsoleAppender.h
+-
 
 ../src/zclib/address.h
 
 ../src/zmq/messaging_server.h
 plog/Log.h
 ../src/zmq/plog/Log.h
+utils.h
+../src/zmq/utils.h
 plog/Appenders/ColorConsoleAppender.h
 -
 zmq.hpp
@@ -172,6 +184,8 @@ string
 iostream
 -
 vector
+-
+jsoncpp/json/json.h
 -
 zmsg.hpp
 ../src/zmq/zmsg.hpp
@@ -218,19 +232,19 @@ string
 stdarg.h
 -
 
-/home/mhghasemi/development/c++/cb-daemon/src/serverd.cpp
+/home/reza/development/conf-bank/cb-daemon/src/serverd.cpp
 iostream
 -
 utils.h
-/home/mhghasemi/development/c++/cb-daemon/src/utils.h
+/home/reza/development/conf-bank/cb-daemon/src/utils.h
 messaging_server.h
-/home/mhghasemi/development/c++/cb-daemon/src/messaging_server.h
+/home/reza/development/conf-bank/cb-daemon/src/messaging_server.h
 thread
 -
 queue
 -
 plog/Log.h
-/home/mhghasemi/development/c++/cb-daemon/src/plog/Log.h
+/home/reza/development/conf-bank/cb-daemon/src/plog/Log.h
 plog/Appenders/ColorConsoleAppender.h
 -
 

@@ -6,6 +6,42 @@
 
 #IncludeRegexTransform: 
 
+../src/utilities/utils.h
+string
+-
+vector
+-
+cstdint
+-
+unistd.h
+-
+sys/stat.h
+-
+stdlib.h
+-
+iostream
+-
+sstream
+-
+ctime
+-
+unordered_map
+-
+chrono
+-
+jsoncpp/json/value.h
+-
+jsoncpp/json/json.h
+-
+address.h
+../src/utilities/address.h
+plog/Log.h
+../src/utilities/plog/Log.h
+plog/Appenders/ColorConsoleAppender.h
+-
+
+../src/zclib/address.h
+
 ../src/zmq/../plog/include/plog/Appenders/ColorConsoleAppender.h
 plog/Appenders/ConsoleAppender.h
 -
@@ -134,13 +170,17 @@ iconv.h
 
 ../src/zmq/../plog/include/plog/WinApi.h
 
-/home/mhghasemi/development/c++/cb-daemon/src/zmq/messaging_server.cpp
+/home/reza/development/conf-bank/cb-daemon/src/zmq/messaging_server.cpp
 messaging_server.h
-/home/mhghasemi/development/c++/cb-daemon/src/zmq/messaging_server.h
+/home/reza/development/conf-bank/cb-daemon/src/zmq/messaging_server.h
+string.h
+-
 
-/home/mhghasemi/development/c++/cb-daemon/src/zmq/messaging_server.h
+/home/reza/development/conf-bank/cb-daemon/src/zmq/messaging_server.h
 plog/Log.h
-/home/mhghasemi/development/c++/cb-daemon/src/zmq/plog/Log.h
+/home/reza/development/conf-bank/cb-daemon/src/zmq/plog/Log.h
+utils.h
+/home/reza/development/conf-bank/cb-daemon/src/zmq/utils.h
 plog/Appenders/ColorConsoleAppender.h
 -
 zmq.hpp
@@ -151,14 +191,16 @@ iostream
 -
 vector
 -
+jsoncpp/json/json.h
+-
 zmsg.hpp
-/home/mhghasemi/development/c++/cb-daemon/src/zmq/zmsg.hpp
+/home/reza/development/conf-bank/cb-daemon/src/zmq/zmsg.hpp
 unistd.h
 -
 windows.h
 -
 
-/home/mhghasemi/development/c++/cb-daemon/src/zmq/zhelpers.hpp
+/home/reza/development/conf-bank/cb-daemon/src/zmq/zhelpers.hpp
 zmq.hpp
 -
 iostream
@@ -186,9 +228,9 @@ sys/time.h
 unistd.h
 -
 
-/home/mhghasemi/development/c++/cb-daemon/src/zmq/zmsg.hpp
+/home/reza/development/conf-bank/cb-daemon/src/zmq/zmsg.hpp
 zhelpers.hpp
-/home/mhghasemi/development/c++/cb-daemon/src/zmq/zhelpers.hpp
+/home/reza/development/conf-bank/cb-daemon/src/zmq/zhelpers.hpp
 vector
 -
 string

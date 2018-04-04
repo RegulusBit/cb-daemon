@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/mhghasemi/development/clion-2017.3.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/mhghasemi/development/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mhghasemi/development/c++/cb-daemon
+CMAKE_SOURCE_DIR = /home/reza/development/conf-bank/cb-daemon
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug
+CMAKE_BINARY_DIR = /home/reza/development/conf-bank/cb-daemon/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/zmq/CMakeFiles/zmq.dir/depend.make
@@ -59,16 +59,16 @@ include src/zmq/CMakeFiles/zmq.dir/flags.make
 
 src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.o: src/zmq/CMakeFiles/zmq.dir/flags.make
 src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.o: ../src/zmq/messaging_server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.o"
-	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/zmq && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zmq.dir/messaging_server.cpp.o -c /home/mhghasemi/development/c++/cb-daemon/src/zmq/messaging_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.o"
+	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zmq.dir/messaging_server.cpp.o -c /home/reza/development/conf-bank/cb-daemon/src/zmq/messaging_server.cpp
 
 src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zmq.dir/messaging_server.cpp.i"
-	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/zmq && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mhghasemi/development/c++/cb-daemon/src/zmq/messaging_server.cpp > CMakeFiles/zmq.dir/messaging_server.cpp.i
+	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/cb-daemon/src/zmq/messaging_server.cpp > CMakeFiles/zmq.dir/messaging_server.cpp.i
 
 src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zmq.dir/messaging_server.cpp.s"
-	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/zmq && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mhghasemi/development/c++/cb-daemon/src/zmq/messaging_server.cpp -o CMakeFiles/zmq.dir/messaging_server.cpp.s
+	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/cb-daemon/src/zmq/messaging_server.cpp -o CMakeFiles/zmq.dir/messaging_server.cpp.s
 
 src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.o.requires:
 
@@ -91,9 +91,9 @@ zmq_EXTERNAL_OBJECTS =
 src/zmq/libzmq.a: src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.o
 src/zmq/libzmq.a: src/zmq/CMakeFiles/zmq.dir/build.make
 src/zmq/libzmq.a: src/zmq/CMakeFiles/zmq.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libzmq.a"
-	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/zmq && $(CMAKE_COMMAND) -P CMakeFiles/zmq.dir/cmake_clean_target.cmake
-	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/zmq && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zmq.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libzmq.a"
+	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq && $(CMAKE_COMMAND) -P CMakeFiles/zmq.dir/cmake_clean_target.cmake
+	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zmq.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/zmq/CMakeFiles/zmq.dir/build: src/zmq/libzmq.a
@@ -105,10 +105,10 @@ src/zmq/CMakeFiles/zmq.dir/requires: src/zmq/CMakeFiles/zmq.dir/messaging_server
 .PHONY : src/zmq/CMakeFiles/zmq.dir/requires
 
 src/zmq/CMakeFiles/zmq.dir/clean:
-	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/zmq && $(CMAKE_COMMAND) -P CMakeFiles/zmq.dir/cmake_clean.cmake
+	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq && $(CMAKE_COMMAND) -P CMakeFiles/zmq.dir/cmake_clean.cmake
 .PHONY : src/zmq/CMakeFiles/zmq.dir/clean
 
 src/zmq/CMakeFiles/zmq.dir/depend:
-	cd /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mhghasemi/development/c++/cb-daemon /home/mhghasemi/development/c++/cb-daemon/src/zmq /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/zmq /home/mhghasemi/development/c++/cb-daemon/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/development/conf-bank/cb-daemon /home/reza/development/conf-bank/cb-daemon/src/zmq /home/reza/development/conf-bank/cb-daemon/cmake-build-debug /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq/CMakeFiles/zmq.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/zmq/CMakeFiles/zmq.dir/depend
 
