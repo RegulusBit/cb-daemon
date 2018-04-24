@@ -17,7 +17,7 @@ zmq::socket_t* worker_t::s_worker_socket(zmq::context_t &context) {
 
     //  Set random identity to make tracing easier
     std::string identity = s_set_id(*worker);
-    worker->connect ("tcp://localhost:5556");
+    worker->connect ("ipc://workers.ipc");
 
     //  Configure socket to not wait at close time
     int linger = 0;

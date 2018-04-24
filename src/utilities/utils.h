@@ -15,60 +15,43 @@
 #include <chrono>
 #include <jsoncpp/json/value.h>
 #include <jsoncpp/json/json.h>
-#include "address.h"
+#include "src/cblib/address.h"
 #include "plog/Log.h"
 #include <plog/Appenders/ColorConsoleAppender.h>
+
+class Exception
+{
+public:
+    Exception(std::string lg)
+    {
+        log.append(lg);
+        LOG_ERROR << "what() " << lg;
+    }
+private:
+    std::string log;
+};
 
 void EnvironmentSetup(pid_t& pid , pid_t& sid);
 
 std::string processRequest(std::string request);
 
-class Account {
-public:
-    Account();
-    Account(__uint64_t balance);
-
-    __uint64_t get_balance(void);
-
-private:
-
-    // uint256 Id; required to specifically point to any account
-    //uint256 implementation needed
-
-    std::string Account_Description;
-    PaymentAddress paymentAddr;
-    __uint64_t Balance;
-
-};
-
-
-class Wallet
-{
-
-public:
-
-    Wallet();
-
-    void add_account(Account& adding_account);
-
-private:
-    Account* default_account;
-    std::vector<Account* > Accounts;
-
-};
 
 class jsonParser
 {
 public:
-
+    jsonParser(){};
     jsonParser(std::string json);
     std::string get_header(void);
-    std::string get_parameter(std::string);
+    std::string get_id(void);
+    bool get_parameter(std::string request, std::string& response);
 private:
     Json::Value rawJson;
+    Json::Value Parameters;
     std::string header;
+    std::string Id;
     std::unordered_map<std::string, std::string> parameters;
 
 };
+
 
 #endif

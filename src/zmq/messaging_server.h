@@ -2,7 +2,8 @@
 #define MESSAGING_SERVER_H
 
 #include "plog/Log.h"
-#include "utils.h"
+#include "src/utilities/utils.h"
+#include "src/cblib/process_request.h"
 #include <plog/Appenders/ColorConsoleAppender.h>
 #include <zmq.hpp>
 #include <string>

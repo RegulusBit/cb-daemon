@@ -47,11 +47,23 @@ void EnvironmentSetup(pid_t& pid , pid_t& sid)
 }
 
 
-jsonParser::jsonParser(std::string json)
-{
+jsonParser::jsonParser(std::string json) {
     Json::Reader rdr;
     rdr.parse(json, rawJson);
-    header = rawJson.get("Method","UTF-8").asString();
+
+    if(!rawJson.size())
+        throw Exception("request information not provided");
+
+    Parameters = rawJson["Parameters"];
+
+
+    header = rawJson.get("Method", "NOVALUE").asString();
+    Id = rawJson.get("Id", "NOVALUE").asString();
+    if (!header.compare("NOVALUE"))
+        LOG_ERROR << "received request doesn't contain header/method: " << json;
+    if (!Id.compare("NOVALUE"))
+        LOG_ERROR << "received request doesn't contain identifier: " << json;
+
 }
 
 std::string jsonParser::get_header()
@@ -59,56 +71,15 @@ std::string jsonParser::get_header()
     return header;
 }
 
-std::string jsonParser::get_parameter(std::string)
+std::string jsonParser::get_id()
 {
-
+    return Id;
 }
 
-
-
-Account::Account()
+bool jsonParser::get_parameter(std::string request, std::string& response)
 {
-    Balance = 100; // default value of deposited account.
+    response = Parameters.get(request, "NOVALUE").asString();
+    return Parameters.isMember(request);
 }
 
-Account::Account(__uint64_t balance)
-{
-    Balance = balance;
-}
-
-__uint64_t Account::get_balance()
-{
-    return Balance;
-}
-
-
-Wallet::Wallet():default_account()
-{
-    Accounts.push_back(default_account);
-
-}
-
-void Wallet::add_account(Account& adding_account)
-{
-    Account *temp = &adding_account;
-    Accounts.push_back(temp);
-}
-
-
-
-
-std::string processRequest(std::string request)
-{
-    Json::FastWriter fstr;
-    Json::Value response;
-    jsonParser parser(request);
-    LOG_DEBUG << "method received: " << parser.get_header();
-
-
-
-    response["response"] = parser.get_header();
-    std::string res = fstr.write(response);
-    return res;
-
-}
 

@@ -3,9 +3,11 @@
 #include "messaging_server.h"
 #include <thread>
 #include <queue>
+#include "account.h"
 #include "plog/Log.h"
 #include <plog/Appenders/ColorConsoleAppender.h>
-
+#include <src/cblib/request_methods.h>
+#include "cb_tests.h"
 
 
 int main(int argc , char* argv[])
@@ -17,19 +19,30 @@ int main(int argc , char* argv[])
     static plog::ColorConsoleAppender<plog::TxtFormatter> consoleAppender;
     plog::init(plog::verbose, &consoleAppender);
 
+
     LOG_VERBOSE << "The daemon main process starts.";
 
     pid_t pid; //process ID
     pid_t sid; // session ID
 
+    //TODO: daemon mode
     //EnvironmentSetup(pid, sid);
+
+    // setup wallet
+    // wallet would extract the accounts from DB
+    methods_setup();
+    Wallet user_wallet;
+
+    // TODO: modify test case activation
+    LOG_VERBOSE << "development unit tests starts.";
+    start_tests();
 
     zmq::context_t context(1);
     zmq::socket_t frontend(context, ZMQ_ROUTER);
     zmq::socket_t backend (context, ZMQ_ROUTER);
 
     frontend.bind("tcp://*:9155");    //  For clients
-    backend.bind ("tcp://*:5556");    //  For internal workers
+    backend.bind ("ipc://workers.ipc");    //  For internal workers
 
 
     //  Queue of available workers
@@ -40,6 +53,9 @@ int main(int argc , char* argv[])
     for(int i=0; i < WORKER_NUM; i++)
     {
         worker_thread[i] = std::thread(worker_t::worker_routine, &context);
+
+        // random() is not thread safe, this will prevent collision in using s_set_id() in threads.
+        random();
         LOG_INFO << "The" << i << "th worker thread created.";
     }
 
@@ -129,3 +145,26 @@ int main(int argc , char* argv[])
     LOG_INFO << "daemon main process finished.";
     return 0;
 }
+
+
+
+
+//test
+
+//#include <jsoncpp/json/json.h>
+//#include "cb_tests.h"
+//#include <iostream>
+//
+//
+//int main()
+//{
+//
+//    //using plog library for logging purposes.
+//    //https://github.com/SergiusTheBest/plog
+//
+//    plog::init(plog::verbose, "log.out", 1000000, 5);
+//    static plog::ColorConsoleAppender<plog::TxtFormatter> consoleAppender;
+//    plog::init(plog::verbose, &consoleAppender);
+//
+//    start_tests();
+//}

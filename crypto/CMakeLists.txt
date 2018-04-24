@@ -1,0 +1,1 @@
+add_library(libcrypto equihash.cpp equihash.tcc hmac_sha256.cpp hmac_sha512.cpp ripemd160.cpp sha1.cpp sha256.cpp sha512.cpp common.h)
