@@ -1,4 +1,4 @@
-# Install script for directory: /home/reza/development/conf-bank/cb-daemon
+# Install script for directory: /home/reza/development/conf-bank/v3/cb-daemon
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,9 +34,19 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities/cmake_install.cmake")
-  include("/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zclib/cmake_install.cmake")
-  include("/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq/cmake_install.cmake")
+  include("/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities/cmake_install.cmake")
+  include("/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/cblib/cmake_install.cmake")
+  include("/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq/cmake_install.cmake")
+  include("/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zcash/cmake_install.cmake")
+  include("/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/primitives/cmake_install.cmake")
+  include("/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/script/cmake_install.cmake")
+  include("/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/crypto/cmake_install.cmake")
+  include("/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/consensus/cmake_install.cmake")
+  include("/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/snark/cmake_install.cmake")
+  include("/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/support/cmake_install.cmake")
+  include("/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/db/cmake_install.cmake")
+  include("/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/cmake_install.cmake")
+  include("/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/hashidsxx/cmake_install.cmake")
 
 endif()
 
@@ -48,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

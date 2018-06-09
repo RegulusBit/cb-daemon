@@ -1,5 +1,26 @@
 
+#include <db/db.h>
 #include "utils.h"
+
+
+bool clear_db(std::string db_name)
+{
+    LOG_WARNING << "clearing database.";
+    bsoncxx::document::view_or_value document{};
+    int* deleted_numbers = new int;
+
+    database::get_instance(db_name).delete_request(collection::accounts_test, document.view(), deleted_numbers);
+    database::get_instance(db_name).delete_request(collection::notes_test, document.view(), deleted_numbers);
+    database::get_instance(db_name).delete_request(collection::notes, document.view(), deleted_numbers);
+    database::get_instance(db_name).delete_request(collection::user_notes, document.view(), deleted_numbers);
+    database::get_instance(db_name).delete_request(collection::user_notes_test, document.view(), deleted_numbers);
+
+    bool is_successful = database::get_instance(db_name).delete_request(collection::accounts, document.view(), deleted_numbers);
+
+    LOG_WARNING << "clearing database: " << (is_successful?"true":"false");
+
+    return is_successful;
+}
 
 
 void EnvironmentSetup(pid_t& pid , pid_t& sid)
@@ -59,6 +80,7 @@ jsonParser::jsonParser(std::string json) {
 
     header = rawJson.get("Method", "NOVALUE").asString();
     Id = rawJson.get("Id", "NOVALUE").asString();
+    wallet_name = rawJson.get("wallet_name", "walletDB").asString();
     if (!header.compare("NOVALUE"))
         LOG_ERROR << "received request doesn't contain header/method: " << json;
     if (!Id.compare("NOVALUE"))
@@ -76,10 +98,33 @@ std::string jsonParser::get_id()
     return Id;
 }
 
+std::string jsonParser::get_wallet_name()
+{
+    return wallet_name;
+}
+
 bool jsonParser::get_parameter(std::string request, std::string& response)
 {
     response = Parameters.get(request, "NOVALUE").asString();
+    LOG_DEBUG << "get parameter result for(" << request << ") is: " << Parameters.isMember(request);
     return Parameters.isMember(request);
 }
 
+Json::Value jsonParser::get_parameters()
+{
+    return Parameters;
+}
+
+std::string jsonComposer::compose(std::string header, Json::Value parameters)
+{
+    Json::FastWriter fst;
+
+    rawJson["Method"] = header;
+    rawJson["Parameters"] = parameters;
+
+    rawJson["Id"] = id_generator.encode(request_counter);
+    request_counter++;
+
+    return fst.write(rawJson);
+}
 

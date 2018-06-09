@@ -1,2 +1,0 @@
-/usr/bin/ar qc libzmq.a  CMakeFiles/zmq.dir/messaging_server.cpp.o
-/usr/bin/ranlib libzmq.a

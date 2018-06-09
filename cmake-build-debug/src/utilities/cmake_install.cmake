@@ -1,4 +1,4 @@
-# Install script for directory: /home/reza/development/conf-bank/cb-daemon/src/utilities
+# Install script for directory: /home/reza/development/conf-bank/v3/cb-daemon/src/utilities
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -7,11 +7,12 @@
 #include "plog/Log.h"
 #include <plog/Appenders/ColorConsoleAppender.h>
 #include <src/cblib/request_methods.h>
+#include <src/zmq/request.h>
 #include "cb_tests.h"
-
 
 int main(int argc , char* argv[])
 {
+
     // using plog library for logging purposes.
     //https://github.com/SergiusTheBest/plog
 
@@ -21,6 +22,7 @@ int main(int argc , char* argv[])
 
 
     LOG_VERBOSE << "The daemon main process starts.";
+    //database::get_instance(DEFAULT_DB).drop();
 
     pid_t pid; //process ID
     pid_t sid; // session ID
@@ -31,15 +33,21 @@ int main(int argc , char* argv[])
     // setup wallet
     // wallet would extract the accounts from DB
     methods_setup();
-    Wallet user_wallet;
+
+
 
     // TODO: modify test case activation
     LOG_VERBOSE << "development unit tests starts.";
     start_tests();
 
-    zmq::context_t context(1);
-    zmq::socket_t frontend(context, ZMQ_ROUTER);
-    zmq::socket_t backend (context, ZMQ_ROUTER);
+    Connection::get_context();
+
+
+    zmqpp::socket frontend(Connection::get_context(), zmqpp::socket_type::router);
+    zmqpp::socket backend(Connection::get_context(), zmqpp::socket_type::router);
+
+
+
 
     frontend.bind("tcp://*:9155");    //  For clients
     backend.bind ("ipc://workers.ipc");    //  For internal workers
@@ -52,61 +60,55 @@ int main(int argc , char* argv[])
 
     for(int i=0; i < WORKER_NUM; i++)
     {
-        worker_thread[i] = std::thread(worker_t::worker_routine, &context);
-
-        // random() is not thread safe, this will prevent collision in using s_set_id() in threads.
-        random();
-        LOG_INFO << "The" << i << "th worker thread created.";
+        //TODO: std::ref
+        worker_thread[i] = std::thread(worker_t::worker_routine, &Connection::get_context());
+        LOG_INFO << "The " << i << "th worker thread created.";
     }
+
 
     //  Send out heartbeats at regular intervals
     int64_t heartbeat_at = s_clock () + HEARTBEAT_INTERVAL;
 
-    while(true)
-    {
-        zmq::pollitem_t items[] = {
-                {(void*)backend,  0, ZMQ_POLLIN, 0},
-                {(void*)frontend, 0, ZMQ_POLLIN, 0}
-        };
-        //  Poll frontend only if we have available workers
-        if (workerQueue.size()) {
-            zmq::poll(items, 2, HEARTBEAT_INTERVAL);
-        } else {
-            LOG_INFO << "The worker queue is empty.";
-            zmq::poll(items, 1, HEARTBEAT_INTERVAL);
-        }
+
+    zmqpp::reactor reactor;
+    zmqpp::poller& poller = reactor.get_poller();
+
+    auto socket_listener = [&poller, &backend, &frontend, &workerQueue, &heartbeat_at](){
+
 
         // worker
 
         //  Handle worker activity on backend
-        if (items[0].revents & ZMQ_POLLIN) {
-            zmsg msg(backend);
+        if (poller.has_input(backend)) {
+            zmqpp::message msg;
+            backend.receive(msg);
 
             //the unwrap method somehow drops two frames(parts)
             //from message which is not correct
             //so the pop method hard coded instead.
-            //std::string identity(msg.unwrap());
-            std::string identity = (char*)msg.pop_front().c_str();
+            std::string identity = msg.get(0);
+
+
 
             //  Return reply to client if it's not a control message
-            if (msg.parts () == 1) {
-                if (strcmp (msg.address (), "READY") == 0) {
+            if (msg.parts () == 2) {
+                if (strcmp (msg.get(1).c_str(), "READY") == 0) {
                     workerQueue._delete(identity);
                     workerQueue._append(identity);
                 }
                 else
                 {
-                    if (strcmp(msg.address(), "HEARTBEAT") == 0) {
+                    if (strcmp(msg.get(1).c_str(), "HEARTBEAT") == 0) {
                         workerQueue._refresh(identity);
                     } else{
                         LOG_WARNING << "invalid message from " << identity;
-                        msg.dump ();
                     }
                 }
             }
             else{
-                LOG_INFO << "Message received from client " << identity << " and sent to worker";
-                msg.send(frontend);
+                LOG_INFO << "Message received from worker " << identity << " and sent to client.";
+                msg.remove(0);
+                frontend.send(msg);
                 workerQueue._append(identity);
             }
         }
@@ -115,12 +117,13 @@ int main(int argc , char* argv[])
 
         //client
 
-        if (items [1].revents & ZMQ_POLLIN) {
+        if (poller.has_input(frontend) && workerQueue.size()) {
             //  Now get next client request, route to next worker
-            zmsg msg(frontend);
+            zmqpp::message msg;
+            frontend.receive(msg);
             std::string identity = std::string(workerQueue._dequeue());
             msg.push_front((char*)identity.c_str());
-            msg.send(backend);
+            backend.send(msg);
         }
 
         //client
@@ -129,19 +132,28 @@ int main(int argc , char* argv[])
         if (s_clock () > heartbeat_at) {
             for (std::vector<worker_t>::iterator it = workerQueue.get_queue().begin();
                  it < workerQueue.get_queue().end(); it++) {
-                zmsg msg ("HEARTBEAT");
-                msg.wrap (it->get_identity().c_str(), NULL);
-                msg.send (backend);
+                zmqpp::message msg("HEARTBEAT");
+                msg.push_front(it->get_identity().c_str());
+                backend.send(msg);
             }
             heartbeat_at = s_clock () + HEARTBEAT_INTERVAL;
         }
         workerQueue._purge();
-    }
+
+    };
+
+
+    reactor.add( frontend, socket_listener );
+    reactor.add( backend, socket_listener );
+
+    while(reactor.poll()) {}
 
     for(int i=0; i < WORKER_NUM; i++)
     {
         worker_thread[i].join();
+
     }
+
     LOG_INFO << "daemon main process finished.";
     return 0;
 }
@@ -150,7 +162,7 @@ int main(int argc , char* argv[])
 
 
 //test
-
+//
 //#include <jsoncpp/json/json.h>
 //#include "cb_tests.h"
 //#include <iostream>
@@ -167,4 +179,6 @@ int main(int argc , char* argv[])
 //    plog::init(plog::verbose, &consoleAppender);
 //
 //    start_tests();
+//
+//    return 0;
 //}

@@ -15,6 +15,7 @@ https://github.com/zcash/zips/blob/master/protocol/protocol.pdf
 namespace libzcash {
 
 #define NOTEENCRYPTION_AUTH_BYTES 16
+#define ZC_CLEN ZC_NOTEPLAINTEXT_SIZE + NOTEENCRYPTION_AUTH_BYTES
 
 template<size_t MLEN>
 class NoteEncryption {

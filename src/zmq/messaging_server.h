@@ -11,6 +11,13 @@
 #include <vector>
 #include <jsoncpp/json/json.h>
 #include "zmsg.hpp"
+#include <zmqpp/context.hpp>
+#include <zmqpp/socket.hpp>
+#include <zmqpp/message.hpp>
+#include <zmqpp/reactor.hpp>
+#include <zmqpp/curve.hpp>
+#include <zmqpp/zmqpp.hpp>
+#include "request.h"
 #ifndef _WIN32
 #include <unistd.h>
 
@@ -25,6 +32,20 @@
 #define INTERVAL_INIT       1000    //  Initial reconnect
 #define INTERVAL_MAX       32000    //  After exponential backoff
 #define WORKER_NUM          5
+
+
+class Connection
+{
+public:
+    static zmqpp::context& get_context(void);
+    ~Connection()
+    {
+        cntxt.terminate();
+    }
+private:
+    Connection(){}
+    static zmqpp::context cntxt;
+};
 
 
 class worker_t

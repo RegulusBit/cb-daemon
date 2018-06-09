@@ -43,10 +43,10 @@ RM = /home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/development/conf-bank/cb-daemon
+CMAKE_SOURCE_DIR = /home/reza/development/conf-bank/v3/cb-daemon
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/development/conf-bank/cb-daemon/cmake-build-debug
+CMAKE_BINARY_DIR = /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/utilities/CMakeFiles/utilities.dir/depend.make
@@ -59,16 +59,16 @@ include src/utilities/CMakeFiles/utilities.dir/flags.make
 
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: src/utilities/CMakeFiles/utilities.dir/flags.make
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.o: ../src/utilities/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/utilities/CMakeFiles/utilities.dir/utils.cpp.o"
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/utilities.dir/utils.cpp.o -c /home/reza/development/conf-bank/cb-daemon/src/utilities/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/utilities/CMakeFiles/utilities.dir/utils.cpp.o"
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/utilities.dir/utils.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/src/utilities/utils.cpp
 
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utilities.dir/utils.cpp.i"
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/cb-daemon/src/utilities/utils.cpp > CMakeFiles/utilities.dir/utils.cpp.i
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/src/utilities/utils.cpp > CMakeFiles/utilities.dir/utils.cpp.i
 
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utilities.dir/utils.cpp.s"
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/cb-daemon/src/utilities/utils.cpp -o CMakeFiles/utilities.dir/utils.cpp.s
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/src/utilities/utils.cpp -o CMakeFiles/utilities.dir/utils.cpp.s
 
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.o.requires:
 
@@ -81,45 +81,19 @@ src/utilities/CMakeFiles/utilities.dir/utils.cpp.o.provides: src/utilities/CMake
 src/utilities/CMakeFiles/utilities.dir/utils.cpp.o.provides.build: src/utilities/CMakeFiles/utilities.dir/utils.cpp.o
 
 
-src/utilities/CMakeFiles/utilities.dir/logger.cpp.o: src/utilities/CMakeFiles/utilities.dir/flags.make
-src/utilities/CMakeFiles/utilities.dir/logger.cpp.o: ../src/utilities/logger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/utilities/CMakeFiles/utilities.dir/logger.cpp.o"
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/utilities.dir/logger.cpp.o -c /home/reza/development/conf-bank/cb-daemon/src/utilities/logger.cpp
-
-src/utilities/CMakeFiles/utilities.dir/logger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utilities.dir/logger.cpp.i"
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/cb-daemon/src/utilities/logger.cpp > CMakeFiles/utilities.dir/logger.cpp.i
-
-src/utilities/CMakeFiles/utilities.dir/logger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utilities.dir/logger.cpp.s"
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/cb-daemon/src/utilities/logger.cpp -o CMakeFiles/utilities.dir/logger.cpp.s
-
-src/utilities/CMakeFiles/utilities.dir/logger.cpp.o.requires:
-
-.PHONY : src/utilities/CMakeFiles/utilities.dir/logger.cpp.o.requires
-
-src/utilities/CMakeFiles/utilities.dir/logger.cpp.o.provides: src/utilities/CMakeFiles/utilities.dir/logger.cpp.o.requires
-	$(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/logger.cpp.o.provides.build
-.PHONY : src/utilities/CMakeFiles/utilities.dir/logger.cpp.o.provides
-
-src/utilities/CMakeFiles/utilities.dir/logger.cpp.o.provides.build: src/utilities/CMakeFiles/utilities.dir/logger.cpp.o
-
-
 # Object files for target utilities
 utilities_OBJECTS = \
-"CMakeFiles/utilities.dir/utils.cpp.o" \
-"CMakeFiles/utilities.dir/logger.cpp.o"
+"CMakeFiles/utilities.dir/utils.cpp.o"
 
 # External object files for target utilities
 utilities_EXTERNAL_OBJECTS =
 
 src/utilities/libutilities.a: src/utilities/CMakeFiles/utilities.dir/utils.cpp.o
-src/utilities/libutilities.a: src/utilities/CMakeFiles/utilities.dir/logger.cpp.o
 src/utilities/libutilities.a: src/utilities/CMakeFiles/utilities.dir/build.make
 src/utilities/libutilities.a: src/utilities/CMakeFiles/utilities.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libutilities.a"
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities && $(CMAKE_COMMAND) -P CMakeFiles/utilities.dir/cmake_clean_target.cmake
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/utilities.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libutilities.a"
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities && $(CMAKE_COMMAND) -P CMakeFiles/utilities.dir/cmake_clean_target.cmake
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/utilities.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/utilities/CMakeFiles/utilities.dir/build: src/utilities/libutilities.a
@@ -127,15 +101,14 @@ src/utilities/CMakeFiles/utilities.dir/build: src/utilities/libutilities.a
 .PHONY : src/utilities/CMakeFiles/utilities.dir/build
 
 src/utilities/CMakeFiles/utilities.dir/requires: src/utilities/CMakeFiles/utilities.dir/utils.cpp.o.requires
-src/utilities/CMakeFiles/utilities.dir/requires: src/utilities/CMakeFiles/utilities.dir/logger.cpp.o.requires
 
 .PHONY : src/utilities/CMakeFiles/utilities.dir/requires
 
 src/utilities/CMakeFiles/utilities.dir/clean:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities && $(CMAKE_COMMAND) -P CMakeFiles/utilities.dir/cmake_clean.cmake
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities && $(CMAKE_COMMAND) -P CMakeFiles/utilities.dir/cmake_clean.cmake
 .PHONY : src/utilities/CMakeFiles/utilities.dir/clean
 
 src/utilities/CMakeFiles/utilities.dir/depend:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/development/conf-bank/cb-daemon /home/reza/development/conf-bank/cb-daemon/src/utilities /home/reza/development/conf-bank/cb-daemon/cmake-build-debug /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/development/conf-bank/v3/cb-daemon /home/reza/development/conf-bank/v3/cb-daemon/src/utilities /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities/CMakeFiles/utilities.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/utilities/CMakeFiles/utilities.dir/depend
 

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libzclib.a  CMakeFiles/zclib.dir/address.cpp.o
-/usr/bin/ranlib libzclib.a

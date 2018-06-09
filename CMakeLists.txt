@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(tutserver)
+project(daemon)
 
 
 set(
@@ -18,8 +18,19 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -Wall")
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/modules")
 
 
-include_directories(. db snark crypto support primitives script snark/libsnark snark/libsnark snark/libsnark/common
-                             ${OPENSSL_INCLUDE_DIRS} ${GOBJECT_INCLUDE_DIR} snark/gtest/googletest/include)
+include_directories(.
+		db
+		snark
+		crypto
+		support
+		primitives
+		script
+		snark/libsnark
+		snark/libsnark
+		snark/libsnark/common
+		${OPENSSL_INCLUDE_DIRS}
+		${GOBJECT_INCLUDE_DIR}
+		snark/gtest/googletest/include)
 
 include_directories(${LIBMONGOCXX_INCLUDE_DIR})
 include_directories(${LIBBSONCXX_INCLUDE_DIR})
@@ -45,6 +56,8 @@ add_subdirectory(consensus)
 add_subdirectory(snark)
 add_subdirectory(support)
 add_subdirectory(db)
+add_subdirectory(zmqpp)
+add_subdirectory(src/hashidsxx)
 
 ## load in pkg-config support
 find_package(PkgConfig)
@@ -93,18 +106,76 @@ set_property(TARGET libgmp PROPERTY IMPORTED_LOCATION "/usr/lib/x86_64-linux-gnu
 
 
 
-add_executable(tutserver src/cb_tests.cpp src/cb_tests.h src/serverd.cpp serialize.h uint252.h uint256.cpp uint256.h streams.h hash.h hash.cpp version.h amount.cpp amount.h random.cpp random.h
-                    tinyformat.h utilstrencodings.cpp utilstrencodings.h sync.cpp sync.h threadsafety.h utiltime.cpp utiltime.h pubkey.cpp pubkey.h
-                    util.h util.cpp key.h key.cpp keystore.cpp keystore.h arith_uint256.cpp arith_uint256.h basic-config.h)
+add_executable(daemon
+		src/cb_tests.cpp
+		src/cb_tests.h
+		src/serverd.cpp
+		serialize.h
+		uint252.h
+		uint256.cpp
+		uint256.h
+		streams.h
+		hash.h
+		hash.cpp
+		version.h
+		amount.cpp
+		amount.h
+		random.cpp
+		random.h
+		tinyformat.h
+		utilstrencodings.cpp
+		utilstrencodings.h
+		sync.cpp
+		sync.h
+		threadsafety.h
+		utiltime.cpp
+		utiltime.h
+		pubkey.cpp
+		pubkey.h
+		util.h
+		util.cpp
+		key.h
+		key.cpp
+		keystore.cpp
+		keystore.h
+		arith_uint256.cpp
+		arith_uint256.h
+		basic-config.h)
 
 
-target_link_libraries(tutserver utilities mongo_db cblib zmq ${JSONCPP_LIBRARIES} ${Boost_LIBRARIES} ${ZeroMQ_LIBRARY} ${CMAKE_THREAD_LIBS_INIT} libzcash primitives script libcrypto testlib testlib2
-									libgmp support consensus libsnark ${Boost_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT}
-                                    secp256k1 ${OPENSSL_LIBRARIES} ${GMP_LIBRARY} ${PROCPS_LIBRARIES} ${JNI_LIBRARIES}
-                                    ${LIBMONGOCXX_LIBRARIES} ${LIBBSONCXX_LIBRARIES})
+target_link_libraries(daemon
+		utilities
+		mongo_db
+		cblib
+		zmq
+		zmqpp-static
+		primitives
+		${JSONCPP_LIBRARIES}
+		${Boost_LIBRARIES}
+		${ZeroMQ_LIBRARY}
+		${CMAKE_THREAD_LIBS_INIT}
+		libzcash
+		script
+		libcrypto
+		testlib
+		testlib2
+		libgmp
+		support
+		consensus
+		libsnark
+		hashidsxx
+		${Boost_LIBRARIES}
+		${CMAKE_THREAD_LIBS_INIT}
+		secp256k1
+		${OPENSSL_LIBRARIES}
+		${GMP_LIBRARY}
+		${PROCPS_LIBRARIES}
+		${JNI_LIBRARIES}
+		${LIBMONGOCXX_LIBRARIES}
+		${LIBBSONCXX_LIBRARIES})
 
 ## add the include directory to our compile directives
-target_include_directories(tutserver PUBLIC
+target_include_directories(daemon PUBLIC
 		src/plog/include
 		src
 		${ZeroMQ_INCLUDE_DIR}

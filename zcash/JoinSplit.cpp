@@ -176,7 +176,7 @@ public:
 
                     // The tree must witness the correct element
                     if (inputs[i].note.cm() != inputs[i].witness.element()) {
-                        throw std::invalid_argument("witness of wrong element for joinsplit input");
+                        throw std::invalid_argument("witness of wrong element for joinsplit input: " + std::to_string(i));
                     }
                 }
 

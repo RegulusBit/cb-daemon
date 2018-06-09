@@ -1,6 +1,6 @@
 #include "messaging_server.h"
 
-#include <string.h>
+
 
 void worker_t::set_identity(std::string idnt){identity = idnt;}
 std::string worker_t::get_identity(void){return identity;}
@@ -9,6 +9,13 @@ int64_t worker_t::get_expiry(void){return expiry;}
 
 
 
+
+zmqpp::context Connection::cntxt;
+
+zmqpp::context& Connection::get_context()
+{
+    return cntxt;
+}
 
 
 zmq::socket_t* worker_t::s_worker_socket(zmq::context_t &context) {
@@ -62,7 +69,7 @@ void worker_t::worker_routine(void* context)
                 //  Process the request and send reply
                 LOG_INFO << "normal reply - " << msg.body();
                 zmsg reply(msg);
-                reply.body_set(processRequest(msg.body()).c_str());
+                reply.body_set(processRequest(msg.body(), context).c_str());
                 reply.send(*worker);
                 liveness = HEARTBEAT_LIVENESS;
                 //  Do some heavy work

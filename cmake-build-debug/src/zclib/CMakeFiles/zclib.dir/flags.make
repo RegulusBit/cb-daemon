@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = -DBOOST_LOG_DYN_LINK
 
-CXX_INCLUDES = -I/home/reza/development/conf-bank/cb-daemon/src/zclib -I/home/reza/development/conf-bank/cb-daemon/src/utilities -I/home/reza/development/conf-bank/cb-daemon/src/utilities/../plog/include 
+CXX_INCLUDES = -I/home/reza/development/conf-bank/v2/cb-daemon/. -I/home/reza/development/conf-bank/v2/cb-daemon/snark -I/home/reza/development/conf-bank/v2/cb-daemon/crypto -I/home/reza/development/conf-bank/v2/cb-daemon/support -I/home/reza/development/conf-bank/v2/cb-daemon/primitives -I/home/reza/development/conf-bank/v2/cb-daemon/script -I/home/reza/development/conf-bank/v2/cb-daemon/snark/libsnark -I/home/reza/development/conf-bank/v2/cb-daemon/snark/libsnark/common -I/home/reza/development/conf-bank/v2/cb-daemon/snark/gtest/googletest/include -I/usr/local/include/mongocxx/v_noabi -I/usr/local/include/bsoncxx/v_noabi -I/home/reza/development/conf-bank/v2/cb-daemon/src/zclib -I/home/reza/development/conf-bank/v2/cb-daemon/src/utilities -I/home/reza/development/conf-bank/v2/cb-daemon/src/utilities/../plog/include 
 

@@ -5,52 +5,117 @@
 		<Option title="tutserver"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\utilities\;CMake Files\src\zclib\;CMake Files\src\zmq\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\modules\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\libmongocxx-3.1.2\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\libbsoncxx-3.1.2\;CMake Files\src\;CMake Files\src\utilities\;CMake Files\src\cblib\;CMake Files\src\zmq\;CMake Files\zcash\;CMake Files\primitives\;CMake Files\script\;CMake Files\crypto\;CMake Files\consensus\;CMake Files\snark\;CMake Files\support\;CMake Files\db\;CMake Files\zmqpp\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tutserver">
-				<Option output="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/tutserver" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug"/>
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/tutserver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DBOOST_LOG_DYN_LINK"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/plog/include"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities/../plog/include"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zclib"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zmq"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zmq/../plog/include"/>
+					<Add option="-DZMQ_STATIC"/>
+					<Add option="-DZMQPP_STATIC_DEFINE"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/depends"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/consensus"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/script"/>
+					<Add directory="/usr/lib/jvm/java-8-openjdk-amd64/include"/>
+					<Add directory="/usr/lib/jvm/java-8-openjdk-amd64/include/linux"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/zmq"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/zmq/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/depends/libff"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -61,26 +126,51 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutserver"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutserver"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tutserver/fast">
-				<Option output="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/tutserver" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug"/>
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/tutserver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DBOOST_LOG_DYN_LINK"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/plog/include"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities/../plog/include"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zclib"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zmq"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zmq/../plog/include"/>
+					<Add option="-DZMQ_STATIC"/>
+					<Add option="-DZMQPP_STATIC_DEFINE"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/depends"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/consensus"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/script"/>
+					<Add directory="/usr/lib/jvm/java-8-openjdk-amd64/include"/>
+					<Add directory="/usr/lib/jvm/java-8-openjdk-amd64/include/linux"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/zmq"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/zmq/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/depends/libff"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -91,23 +181,36 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutserver/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 tutserver/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="utilities">
-				<Option output="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities/libutilities.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities"/>
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities/libutilities.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DBOOST_LOG_DYN_LINK"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities/../plog/include"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zclib"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/plog/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -118,23 +221,36 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 utilities"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 utilities"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="utilities/fast">
-				<Option output="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities/libutilities.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities"/>
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities/libutilities.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DBOOST_LOG_DYN_LINK"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities/../plog/include"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zclib"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/plog/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -145,23 +261,36 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 utilities/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 utilities/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="zclib">
-				<Option output="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zclib/libzclib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zclib"/>
+			<Target title="cblib">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/cblib/libcblib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/cblib"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DBOOST_LOG_DYN_LINK"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zclib"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/plog/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -172,23 +301,36 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 zclib"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/cblib/Makefile&quot;  VERBOSE=1 cblib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/cblib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/cblib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/cblib/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="zclib/fast">
-				<Option output="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zclib/libzclib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zclib"/>
+			<Target title="cblib/fast">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/cblib/libcblib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/cblib"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DBOOST_LOG_DYN_LINK"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zclib"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/plog/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -199,25 +341,38 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 zclib/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zclib/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/cblib/Makefile&quot;  VERBOSE=1 cblib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/cblib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/cblib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/cblib/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="zmq">
-				<Option output="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq/libzmq.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq"/>
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq/libzmq.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DBOOST_LOG_DYN_LINK"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zmq"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zmq/../plog/include"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities/../plog/include"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zclib"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/zmq"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/zmq/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/plog/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -228,25 +383,38 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 zmq"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 zmq"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="zmq/fast">
-				<Option output="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq/libzmq.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq"/>
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq/libzmq.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DBOOST_LOG_DYN_LINK"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zmq"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zmq/../plog/include"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/utilities/../plog/include"/>
-					<Add directory="/home/reza/development/conf-bank/cb-daemon/src/zclib"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/zmq"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/zmq/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities/../plog/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/plog/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -257,54 +425,1795 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 zmq/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 zmq/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libzcash">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zcash/liblibzcash.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zcash"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/crypto"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zcash/Makefile&quot;  VERBOSE=1 libzcash"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zcash/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zcash/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zcash/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libzcash/fast">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zcash/liblibzcash.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zcash"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/crypto"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zcash/Makefile&quot;  VERBOSE=1 libzcash/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zcash/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zcash/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zcash/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="primitives">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/primitives/libprimitives.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/primitives"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/primitives/Makefile&quot;  VERBOSE=1 primitives"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/primitives/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/primitives/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/primitives/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="primitives/fast">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/primitives/libprimitives.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/primitives"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/primitives/Makefile&quot;  VERBOSE=1 primitives/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/primitives/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/primitives/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/primitives/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="script">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/script/libscript.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/script"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/script/Makefile&quot;  VERBOSE=1 script"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/script/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/script/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/script/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="script/fast">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/script/libscript.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/script"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/script/Makefile&quot;  VERBOSE=1 script/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/script/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/script/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/script/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libcrypto">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/crypto/liblibcrypto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/crypto"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/crypto/Makefile&quot;  VERBOSE=1 libcrypto"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/crypto/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/crypto/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/crypto/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libcrypto/fast">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/crypto/liblibcrypto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/crypto"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/crypto/Makefile&quot;  VERBOSE=1 libcrypto/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/crypto/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/crypto/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/crypto/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="consensus">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/consensus/libconsensus.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/consensus"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/consensus/Makefile&quot;  VERBOSE=1 consensus"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/consensus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/consensus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/consensus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="consensus/fast">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/consensus/libconsensus.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/consensus"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/consensus/Makefile&quot;  VERBOSE=1 consensus/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/consensus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/consensus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/consensus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libsnark">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/snark/liblibsnark.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/snark"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/depends"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/depends/libff"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/snark/Makefile&quot;  VERBOSE=1 libsnark"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/snark/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/snark/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/snark/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libsnark/fast">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/snark/liblibsnark.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/snark"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/depends"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/depends/libff"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/snark/Makefile&quot;  VERBOSE=1 libsnark/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/snark/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/snark/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/snark/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="support">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/support/libsupport.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/support"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/support/Makefile&quot;  VERBOSE=1 support"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/support/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/support/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/support/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="support/fast">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/support/libsupport.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/support"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/support/Makefile&quot;  VERBOSE=1 support/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/support/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/support/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/support/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mongo_db">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/db/libmongo_db.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/db"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/plog/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/db/Makefile&quot;  VERBOSE=1 mongo_db"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/db/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/db/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/db/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mongo_db/fast">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/db/libmongo_db.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/db"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/src/plog/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/db/Makefile&quot;  VERBOSE=1 mongo_db/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/db/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/db/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/db/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zmqpp">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/libzmqpp.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add option="-DTRAVIS_CI_BUILD"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 zmqpp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zmqpp/fast">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/libzmqpp.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add option="-DTRAVIS_CI_BUILD"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 zmqpp/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zmqpp-static">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/libzmqpp-static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DZMQ_STATIC"/>
+					<Add option="-DZMQPP_STATIC_DEFINE"/>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add option="-DTRAVIS_CI_BUILD"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 zmqpp-static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zmqpp-static/fast">
+				<Option output="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/libzmqpp-static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DZMQ_STATIC"/>
+					<Add option="-DZMQPP_STATIC_DEFINE"/>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add option="-DTRAVIS_CI_BUILD"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/."/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/db"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/crypto"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/support"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/primitives"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/script"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include"/>
+					<Add directory="/usr/local/include/mongocxx/v_noabi"/>
+					<Add directory="/usr/local/include/bsoncxx/v_noabi"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src"/>
+					<Add directory="/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 zmqpp-static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/zmqpp/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/src/serverd.cpp">
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/amount.cpp">
 			<Option target="tutserver"/>
 		</Unit>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/src/utilities/logger.cpp">
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/amount.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/arith_uint256.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/arith_uint256.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/basic-config.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/consensus/consensus.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/consensus/params.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/consensus/upgrades.cpp">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/consensus/upgrades.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/consensus/validation.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/common.h">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/equihash.cpp">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/equihash.h">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/equihash.tcc">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/hmac_sha256.cpp">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/hmac_sha256.h">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/hmac_sha512.cpp">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/hmac_sha512.h">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/ripemd160.cpp">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/ripemd160.h">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/sha1.cpp">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/sha1.h">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/sha256.cpp">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/sha256.h">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/sha512.cpp">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/sha512.h">
+			<Option target="libcrypto"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/db/db.cpp">
+			<Option target="mongo_db"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/db/db.h">
+			<Option target="mongo_db"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/hash.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/hash.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/key.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/key.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/keystore.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/keystore.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/primitives/transaction.cpp">
+			<Option target="primitives"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/primitives/transaction.h">
+			<Option target="primitives"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/pubkey.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/pubkey.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/random.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/random.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/interpreter.cpp">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/interpreter.h">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/script.cpp">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/script.h">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/script_error.cpp">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/script_error.h">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/sigcache.cpp">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/sigcache.h">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/sign.cpp">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/sign.h">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/standard.cpp">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/standard.h">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/zcashconsensus.cpp">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/zcashconsensus.h">
+			<Option target="script"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/serialize.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/gmock-actions.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/gmock-cardinalities.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/gmock-generated-actions.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/gmock-generated-function-mockers.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/gmock-generated-matchers.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/gmock-generated-nice-strict.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/gmock-matchers.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/gmock-more-actions.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/gmock-more-matchers.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/gmock-spec-builders.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/gmock.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/internal/custom/gmock-generated-actions.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/internal/custom/gmock-matchers.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/internal/custom/gmock-port.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/internal/gmock-generated-internal-utils.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/internal/gmock-internal-utils.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/include/gmock/internal/gmock-port.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googlemock/test/gmock_link_test.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/gtest-death-test.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/gtest-message.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/gtest-param-test.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/gtest-printers.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/gtest-spi.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/gtest-test-part.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/gtest-typed-test.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/gtest.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/gtest_pred_impl.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/gtest_prod.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/custom/gtest-port.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/custom/gtest-printers.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/custom/gtest.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/gtest-death-test-internal.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/gtest-filepath.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/gtest-internal.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/gtest-linked_ptr.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/gtest-param-util-generated.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/gtest-param-util.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/gtest-port-arch.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/gtest-port.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/gtest-string.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/gtest-tuple.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/include/gtest/internal/gtest-type-util.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/samples/prime_tables.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/samples/sample1.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/samples/sample2.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/samples/sample3-inl.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/samples/sample4.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/src/gtest-internal-inl.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/test/gtest-param-test_test.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/test/gtest-typed-test_test.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/test/production.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/googletest/xcode/Samples/FrameworkSample/widget.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/gtest/gtest.h">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/alt_bn128/alt_bn128_g1.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/alt_bn128/alt_bn128_g1.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/alt_bn128/alt_bn128_g2.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/alt_bn128/alt_bn128_g2.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/alt_bn128/alt_bn128_init.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/alt_bn128/alt_bn128_init.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/alt_bn128/alt_bn128_pairing.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/alt_bn128/alt_bn128_pairing.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/alt_bn128/alt_bn128_pp.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/alt_bn128/alt_bn128_pp.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/curve_utils.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/curve_utils.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/public_params.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/tests/test_bilinearity.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/curves/tests/test_groups.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/evaluation_domain/domains/basic_radix2_domain.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/evaluation_domain/domains/basic_radix2_domain.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/evaluation_domain/domains/basic_radix2_domain_aux.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/evaluation_domain/domains/basic_radix2_domain_aux.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/evaluation_domain/evaluation_domain.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/evaluation_domain/evaluation_domain.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/exponentiation/exponentiation.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/exponentiation/exponentiation.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/bigint.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/bigint.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/field_utils.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/field_utils.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/fp.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/fp.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/fp12_2over3over2.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/fp12_2over3over2.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/fp2.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/fp2.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/fp6_3over2.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/fp6_3over2.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/fp_aux.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/tests/test_bigint.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/fields/tests/test_fields.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/knowledge_commitment/knowledge_commitment.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/knowledge_commitment/knowledge_commitment.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/scalar_multiplication/kc_multiexp.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/scalar_multiplication/kc_multiexp.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/scalar_multiplication/multiexp.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/scalar_multiplication/multiexp.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/scalar_multiplication/wnaf.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/algebra/scalar_multiplication/wnaf.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/assert_except.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/data_structures/accumulation_vector.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/data_structures/accumulation_vector.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/data_structures/merkle_tree.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/data_structures/merkle_tree.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/data_structures/sparse_vector.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/data_structures/sparse_vector.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/default_types/ec_pp.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/default_types/r1cs_ppzksnark_pp.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/profiling.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/profiling.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/serialization.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/serialization.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/template_utils.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/utils.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/utils.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/common/utils.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/constraint_profiling.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/constraint_profiling.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/examples/simple_example.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/examples/simple_example.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadget.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadget.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/basic_gadgets.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/basic_gadgets.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/gadget_from_r1cs.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/gadget_from_r1cs.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/hashes/digest_selector_gadget.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/hashes/digest_selector_gadget.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/hashes/hash_io.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/hashes/hash_io.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/hashes/sha256/sha256_aux.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/hashes/sha256/sha256_aux.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/hashes/sha256/sha256_components.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/hashes/sha256/sha256_components.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/hashes/sha256/sha256_gadget.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/hashes/sha256/sha256_gadget.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/hashes/sha256/tests/test_sha256_gadget.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/merkle_tree/merkle_authentication_path_variable.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/merkle_tree/merkle_authentication_path_variable.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/merkle_tree/merkle_tree_check_read_gadget.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/merkle_tree/merkle_tree_check_read_gadget.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/merkle_tree/merkle_tree_check_update_gadget.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/merkle_tree/merkle_tree_check_update_gadget.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/gadgets/merkle_tree/tests/test_merkle_tree_gadgets.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/pb_variable.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/pb_variable.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/protoboard.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/gadgetlib1/protoboard.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/reductions/r1cs_to_qap/r1cs_to_qap.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/reductions/r1cs_to_qap/r1cs_to_qap.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/relations/arithmetic_programs/qap/qap.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/relations/arithmetic_programs/qap/qap.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/relations/arithmetic_programs/qap/tests/test_qap.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/relations/constraint_satisfaction_problems/r1cs/examples/r1cs_examples.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/relations/constraint_satisfaction_problems/r1cs/examples/r1cs_examples.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/relations/constraint_satisfaction_problems/r1cs/r1cs.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/relations/constraint_satisfaction_problems/r1cs/r1cs.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/relations/variable.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/relations/variable.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/zk_proof_systems/ppzksnark/r1cs_ppzksnark/examples/run_r1cs_ppzksnark.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/zk_proof_systems/ppzksnark/r1cs_ppzksnark/examples/run_r1cs_ppzksnark.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/zk_proof_systems/ppzksnark/r1cs_ppzksnark/profiling/profile_r1cs_ppzksnark.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/zk_proof_systems/ppzksnark/r1cs_ppzksnark/r1cs_ppzksnark.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/zk_proof_systems/ppzksnark/r1cs_ppzksnark/r1cs_ppzksnark.tcc">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/zk_proof_systems/ppzksnark/r1cs_ppzksnark/r1cs_ppzksnark_params.hpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/libsnark/zk_proof_systems/ppzksnark/r1cs_ppzksnark/tests/test_r1cs_ppzksnark.cpp">
+			<Option target="libsnark"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/cb_tests.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/cb_tests.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib/account.cpp">
+			<Option target="cblib"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib/account.h">
+			<Option target="cblib"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib/address.cpp">
+			<Option target="cblib"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib/address.h">
+			<Option target="cblib"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib/process_request.cpp">
+			<Option target="cblib"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib/process_request.h">
+			<Option target="cblib"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib/request_methods.cpp">
+			<Option target="cblib"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib/request_methods.h">
+			<Option target="cblib"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/serverd.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities/utils.cpp">
 			<Option target="utilities"/>
 		</Unit>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/src/utilities/logger.h">
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities/utils.h">
 			<Option target="utilities"/>
 		</Unit>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/src/utilities/utils.cpp">
-			<Option target="utilities"/>
-		</Unit>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/src/utilities/utils.h">
-			<Option target="utilities"/>
-		</Unit>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/src/zclib/address.cpp">
-			<Option target="zclib"/>
-		</Unit>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/src/zclib/address.h">
-			<Option target="zclib"/>
-		</Unit>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/src/zmq/messaging_server.cpp">
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/zmq/messaging_server.cpp">
 			<Option target="zmq"/>
 		</Unit>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/src/zmq/messaging_server.h">
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/zmq/messaging_server.h">
 			<Option target="zmq"/>
 		</Unit>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/src/zmq/zmsg.hpp">
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/zmq/zmsg.hpp">
 			<Option target="zmq"/>
 		</Unit>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/CMakeLists.txt">
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/streams.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/support/allocators/secure.h">
+			<Option target="support"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/support/allocators/zeroafterfree.h">
+			<Option target="support"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/support/cleanse.cpp">
+			<Option target="support"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/support/cleanse.h">
+			<Option target="support"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/support/events.h">
+			<Option target="support"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/support/pagelocker.cpp">
+			<Option target="support"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/support/pagelocker.h">
+			<Option target="support"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/sync.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/sync.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/threadsafety.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/tinyformat.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/uint252.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/uint256.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/uint256.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/util.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/util.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/utilstrencodings.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/utilstrencodings.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/utiltime.cpp">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/utiltime.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/version.h">
+			<Option target="tutserver"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/Address.cpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/Address.hpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/CreateJoinSplit.cpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/GenerateParams.cpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/IncrementalMerkleTree.cpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/IncrementalMerkleTree.hpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/JoinSplit.cpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/JoinSplit.hpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/Note.cpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/Note.hpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/NoteEncryption.cpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/NoteEncryption.hpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/Proof.cpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/Proof.hpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/Zcash.h">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/circuit/commitment.tcc">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/circuit/gadget.tcc">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/circuit/merkle.tcc">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/circuit/note.tcc">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/circuit/prfs.tcc">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/circuit/utils.tcc">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/prf.cpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/prf.h">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/util.cpp">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/util.h">
+			<Option target="libzcash"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/actor.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/actor.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/auth.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/auth.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/context.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/context.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/curve.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/curve.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/frame.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/frame.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/loop.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/loop.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/message.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/message.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/poller.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/poller.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/proxy.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/proxy.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/proxy_steerable.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/proxy_steerable.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/reactor.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/reactor.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/signal.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/signal.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/socket.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/socket.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/z85.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/z85.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/zap_request.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/zap_request.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/zmqpp.cpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/src/zmqpp/zmqpp.hpp">
+			<Option target="zmqpp"/>
+			<Option target="zmqpp-static"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/src/utilities/CMakeLists.txt">
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/modules/FindGMP.cmake">
+			<Option virtualFolder="CMake Files\modules\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/modules/FindProcps.cmake">
+			<Option virtualFolder="CMake Files\modules\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/../../../../../../usr/local/lib/cmake/libmongocxx-3.1.2/libmongocxx-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\libmongocxx-3.1.2\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/../../../../../../usr/local/lib/cmake/libmongocxx-3.1.2/libmongocxx-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\libmongocxx-3.1.2\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/../../../../../../usr/local/lib/cmake/libbsoncxx-3.1.2/libbsoncxx-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\libbsoncxx-3.1.2\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/../../../../../../usr/local/lib/cmake/libbsoncxx-3.1.2/libbsoncxx-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\libbsoncxx-3.1.2\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/utilities/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\utilities\"/>
 		</Unit>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/src/zclib/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\src\zclib\"/>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/cblib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\cblib\"/>
 		</Unit>
-		<Unit filename="/home/reza/development/conf-bank/cb-daemon/src/zmq/CMakeLists.txt">
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/src/zmq/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\zmq\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zcash/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\zcash\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/primitives/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\primitives\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/script/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\script\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/crypto/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\crypto\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/consensus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\consensus\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/snark/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\snark\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/support/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\support\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/db/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\db\"/>
+		</Unit>
+		<Unit filename="/home/reza/development/conf-bank/v3/cb-daemon/zmqpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\zmqpp\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

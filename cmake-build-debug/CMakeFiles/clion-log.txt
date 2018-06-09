@@ -1,17 +1,19 @@
-/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/reza/development/conf-bank/cb-daemon
+/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/reza/development/conf-bank/v3/cb-daemon
 -- Boost version: 1.58.0
 -- Found the following Boost libraries:
 --   log
+--   filesystem
+--   system
+--   thread
+--   program_options
 --   log_setup
 --   date_time
---   system
---   filesystem
---   thread
 --   regex
 --   chrono
 --   atomic
 -- Checking for module 'jsoncpp'
 --   Found jsoncpp, version 1.7.2
+-- Found GMP: /usr/lib/x86_64-linux-gnu/libgmp.so
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/reza/development/conf-bank/cb-daemon/cmake-build-debug
+-- Build files have been written to: /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug

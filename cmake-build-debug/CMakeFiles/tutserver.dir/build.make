@@ -43,10 +43,10 @@ RM = /home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/development/conf-bank/cb-daemon
+CMAKE_SOURCE_DIR = /home/reza/development/conf-bank/v3/cb-daemon
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/development/conf-bank/cb-daemon/cmake-build-debug
+CMAKE_BINARY_DIR = /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tutserver.dir/depend.make
@@ -57,18 +57,42 @@ include CMakeFiles/tutserver.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tutserver.dir/flags.make
 
+CMakeFiles/tutserver.dir/src/cb_tests.cpp.o: CMakeFiles/tutserver.dir/flags.make
+CMakeFiles/tutserver.dir/src/cb_tests.cpp.o: ../src/cb_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tutserver.dir/src/cb_tests.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/src/cb_tests.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/src/cb_tests.cpp
+
+CMakeFiles/tutserver.dir/src/cb_tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/src/cb_tests.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/src/cb_tests.cpp > CMakeFiles/tutserver.dir/src/cb_tests.cpp.i
+
+CMakeFiles/tutserver.dir/src/cb_tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/src/cb_tests.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/src/cb_tests.cpp -o CMakeFiles/tutserver.dir/src/cb_tests.cpp.s
+
+CMakeFiles/tutserver.dir/src/cb_tests.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutserver.dir/src/cb_tests.cpp.o.requires
+
+CMakeFiles/tutserver.dir/src/cb_tests.cpp.o.provides: CMakeFiles/tutserver.dir/src/cb_tests.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/src/cb_tests.cpp.o.provides.build
+.PHONY : CMakeFiles/tutserver.dir/src/cb_tests.cpp.o.provides
+
+CMakeFiles/tutserver.dir/src/cb_tests.cpp.o.provides.build: CMakeFiles/tutserver.dir/src/cb_tests.cpp.o
+
+
 CMakeFiles/tutserver.dir/src/serverd.cpp.o: CMakeFiles/tutserver.dir/flags.make
 CMakeFiles/tutserver.dir/src/serverd.cpp.o: ../src/serverd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tutserver.dir/src/serverd.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/src/serverd.cpp.o -c /home/reza/development/conf-bank/cb-daemon/src/serverd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tutserver.dir/src/serverd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/src/serverd.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/src/serverd.cpp
 
 CMakeFiles/tutserver.dir/src/serverd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/src/serverd.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/cb-daemon/src/serverd.cpp > CMakeFiles/tutserver.dir/src/serverd.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/src/serverd.cpp > CMakeFiles/tutserver.dir/src/serverd.cpp.i
 
 CMakeFiles/tutserver.dir/src/serverd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/src/serverd.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/cb-daemon/src/serverd.cpp -o CMakeFiles/tutserver.dir/src/serverd.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/src/serverd.cpp -o CMakeFiles/tutserver.dir/src/serverd.cpp.s
 
 CMakeFiles/tutserver.dir/src/serverd.cpp.o.requires:
 
@@ -81,34 +105,380 @@ CMakeFiles/tutserver.dir/src/serverd.cpp.o.provides: CMakeFiles/tutserver.dir/sr
 CMakeFiles/tutserver.dir/src/serverd.cpp.o.provides.build: CMakeFiles/tutserver.dir/src/serverd.cpp.o
 
 
+CMakeFiles/tutserver.dir/uint256.cpp.o: CMakeFiles/tutserver.dir/flags.make
+CMakeFiles/tutserver.dir/uint256.cpp.o: ../uint256.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tutserver.dir/uint256.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/uint256.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/uint256.cpp
+
+CMakeFiles/tutserver.dir/uint256.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/uint256.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/uint256.cpp > CMakeFiles/tutserver.dir/uint256.cpp.i
+
+CMakeFiles/tutserver.dir/uint256.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/uint256.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/uint256.cpp -o CMakeFiles/tutserver.dir/uint256.cpp.s
+
+CMakeFiles/tutserver.dir/uint256.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutserver.dir/uint256.cpp.o.requires
+
+CMakeFiles/tutserver.dir/uint256.cpp.o.provides: CMakeFiles/tutserver.dir/uint256.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/uint256.cpp.o.provides.build
+.PHONY : CMakeFiles/tutserver.dir/uint256.cpp.o.provides
+
+CMakeFiles/tutserver.dir/uint256.cpp.o.provides.build: CMakeFiles/tutserver.dir/uint256.cpp.o
+
+
+CMakeFiles/tutserver.dir/hash.cpp.o: CMakeFiles/tutserver.dir/flags.make
+CMakeFiles/tutserver.dir/hash.cpp.o: ../hash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tutserver.dir/hash.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/hash.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/hash.cpp
+
+CMakeFiles/tutserver.dir/hash.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/hash.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/hash.cpp > CMakeFiles/tutserver.dir/hash.cpp.i
+
+CMakeFiles/tutserver.dir/hash.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/hash.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/hash.cpp -o CMakeFiles/tutserver.dir/hash.cpp.s
+
+CMakeFiles/tutserver.dir/hash.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutserver.dir/hash.cpp.o.requires
+
+CMakeFiles/tutserver.dir/hash.cpp.o.provides: CMakeFiles/tutserver.dir/hash.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/hash.cpp.o.provides.build
+.PHONY : CMakeFiles/tutserver.dir/hash.cpp.o.provides
+
+CMakeFiles/tutserver.dir/hash.cpp.o.provides.build: CMakeFiles/tutserver.dir/hash.cpp.o
+
+
+CMakeFiles/tutserver.dir/amount.cpp.o: CMakeFiles/tutserver.dir/flags.make
+CMakeFiles/tutserver.dir/amount.cpp.o: ../amount.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tutserver.dir/amount.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/amount.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/amount.cpp
+
+CMakeFiles/tutserver.dir/amount.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/amount.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/amount.cpp > CMakeFiles/tutserver.dir/amount.cpp.i
+
+CMakeFiles/tutserver.dir/amount.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/amount.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/amount.cpp -o CMakeFiles/tutserver.dir/amount.cpp.s
+
+CMakeFiles/tutserver.dir/amount.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutserver.dir/amount.cpp.o.requires
+
+CMakeFiles/tutserver.dir/amount.cpp.o.provides: CMakeFiles/tutserver.dir/amount.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/amount.cpp.o.provides.build
+.PHONY : CMakeFiles/tutserver.dir/amount.cpp.o.provides
+
+CMakeFiles/tutserver.dir/amount.cpp.o.provides.build: CMakeFiles/tutserver.dir/amount.cpp.o
+
+
+CMakeFiles/tutserver.dir/random.cpp.o: CMakeFiles/tutserver.dir/flags.make
+CMakeFiles/tutserver.dir/random.cpp.o: ../random.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tutserver.dir/random.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/random.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/random.cpp
+
+CMakeFiles/tutserver.dir/random.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/random.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/random.cpp > CMakeFiles/tutserver.dir/random.cpp.i
+
+CMakeFiles/tutserver.dir/random.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/random.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/random.cpp -o CMakeFiles/tutserver.dir/random.cpp.s
+
+CMakeFiles/tutserver.dir/random.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutserver.dir/random.cpp.o.requires
+
+CMakeFiles/tutserver.dir/random.cpp.o.provides: CMakeFiles/tutserver.dir/random.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/random.cpp.o.provides.build
+.PHONY : CMakeFiles/tutserver.dir/random.cpp.o.provides
+
+CMakeFiles/tutserver.dir/random.cpp.o.provides.build: CMakeFiles/tutserver.dir/random.cpp.o
+
+
+CMakeFiles/tutserver.dir/utilstrencodings.cpp.o: CMakeFiles/tutserver.dir/flags.make
+CMakeFiles/tutserver.dir/utilstrencodings.cpp.o: ../utilstrencodings.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tutserver.dir/utilstrencodings.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/utilstrencodings.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/utilstrencodings.cpp
+
+CMakeFiles/tutserver.dir/utilstrencodings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/utilstrencodings.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/utilstrencodings.cpp > CMakeFiles/tutserver.dir/utilstrencodings.cpp.i
+
+CMakeFiles/tutserver.dir/utilstrencodings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/utilstrencodings.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/utilstrencodings.cpp -o CMakeFiles/tutserver.dir/utilstrencodings.cpp.s
+
+CMakeFiles/tutserver.dir/utilstrencodings.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutserver.dir/utilstrencodings.cpp.o.requires
+
+CMakeFiles/tutserver.dir/utilstrencodings.cpp.o.provides: CMakeFiles/tutserver.dir/utilstrencodings.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/utilstrencodings.cpp.o.provides.build
+.PHONY : CMakeFiles/tutserver.dir/utilstrencodings.cpp.o.provides
+
+CMakeFiles/tutserver.dir/utilstrencodings.cpp.o.provides.build: CMakeFiles/tutserver.dir/utilstrencodings.cpp.o
+
+
+CMakeFiles/tutserver.dir/sync.cpp.o: CMakeFiles/tutserver.dir/flags.make
+CMakeFiles/tutserver.dir/sync.cpp.o: ../sync.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tutserver.dir/sync.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/sync.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/sync.cpp
+
+CMakeFiles/tutserver.dir/sync.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/sync.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/sync.cpp > CMakeFiles/tutserver.dir/sync.cpp.i
+
+CMakeFiles/tutserver.dir/sync.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/sync.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/sync.cpp -o CMakeFiles/tutserver.dir/sync.cpp.s
+
+CMakeFiles/tutserver.dir/sync.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutserver.dir/sync.cpp.o.requires
+
+CMakeFiles/tutserver.dir/sync.cpp.o.provides: CMakeFiles/tutserver.dir/sync.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/sync.cpp.o.provides.build
+.PHONY : CMakeFiles/tutserver.dir/sync.cpp.o.provides
+
+CMakeFiles/tutserver.dir/sync.cpp.o.provides.build: CMakeFiles/tutserver.dir/sync.cpp.o
+
+
+CMakeFiles/tutserver.dir/utiltime.cpp.o: CMakeFiles/tutserver.dir/flags.make
+CMakeFiles/tutserver.dir/utiltime.cpp.o: ../utiltime.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tutserver.dir/utiltime.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/utiltime.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/utiltime.cpp
+
+CMakeFiles/tutserver.dir/utiltime.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/utiltime.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/utiltime.cpp > CMakeFiles/tutserver.dir/utiltime.cpp.i
+
+CMakeFiles/tutserver.dir/utiltime.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/utiltime.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/utiltime.cpp -o CMakeFiles/tutserver.dir/utiltime.cpp.s
+
+CMakeFiles/tutserver.dir/utiltime.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutserver.dir/utiltime.cpp.o.requires
+
+CMakeFiles/tutserver.dir/utiltime.cpp.o.provides: CMakeFiles/tutserver.dir/utiltime.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/utiltime.cpp.o.provides.build
+.PHONY : CMakeFiles/tutserver.dir/utiltime.cpp.o.provides
+
+CMakeFiles/tutserver.dir/utiltime.cpp.o.provides.build: CMakeFiles/tutserver.dir/utiltime.cpp.o
+
+
+CMakeFiles/tutserver.dir/pubkey.cpp.o: CMakeFiles/tutserver.dir/flags.make
+CMakeFiles/tutserver.dir/pubkey.cpp.o: ../pubkey.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tutserver.dir/pubkey.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/pubkey.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/pubkey.cpp
+
+CMakeFiles/tutserver.dir/pubkey.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/pubkey.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/pubkey.cpp > CMakeFiles/tutserver.dir/pubkey.cpp.i
+
+CMakeFiles/tutserver.dir/pubkey.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/pubkey.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/pubkey.cpp -o CMakeFiles/tutserver.dir/pubkey.cpp.s
+
+CMakeFiles/tutserver.dir/pubkey.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutserver.dir/pubkey.cpp.o.requires
+
+CMakeFiles/tutserver.dir/pubkey.cpp.o.provides: CMakeFiles/tutserver.dir/pubkey.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/pubkey.cpp.o.provides.build
+.PHONY : CMakeFiles/tutserver.dir/pubkey.cpp.o.provides
+
+CMakeFiles/tutserver.dir/pubkey.cpp.o.provides.build: CMakeFiles/tutserver.dir/pubkey.cpp.o
+
+
+CMakeFiles/tutserver.dir/util.cpp.o: CMakeFiles/tutserver.dir/flags.make
+CMakeFiles/tutserver.dir/util.cpp.o: ../util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tutserver.dir/util.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/util.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/util.cpp
+
+CMakeFiles/tutserver.dir/util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/util.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/util.cpp > CMakeFiles/tutserver.dir/util.cpp.i
+
+CMakeFiles/tutserver.dir/util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/util.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/util.cpp -o CMakeFiles/tutserver.dir/util.cpp.s
+
+CMakeFiles/tutserver.dir/util.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutserver.dir/util.cpp.o.requires
+
+CMakeFiles/tutserver.dir/util.cpp.o.provides: CMakeFiles/tutserver.dir/util.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/util.cpp.o.provides.build
+.PHONY : CMakeFiles/tutserver.dir/util.cpp.o.provides
+
+CMakeFiles/tutserver.dir/util.cpp.o.provides.build: CMakeFiles/tutserver.dir/util.cpp.o
+
+
+CMakeFiles/tutserver.dir/key.cpp.o: CMakeFiles/tutserver.dir/flags.make
+CMakeFiles/tutserver.dir/key.cpp.o: ../key.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/tutserver.dir/key.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/key.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/key.cpp
+
+CMakeFiles/tutserver.dir/key.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/key.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/key.cpp > CMakeFiles/tutserver.dir/key.cpp.i
+
+CMakeFiles/tutserver.dir/key.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/key.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/key.cpp -o CMakeFiles/tutserver.dir/key.cpp.s
+
+CMakeFiles/tutserver.dir/key.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutserver.dir/key.cpp.o.requires
+
+CMakeFiles/tutserver.dir/key.cpp.o.provides: CMakeFiles/tutserver.dir/key.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/key.cpp.o.provides.build
+.PHONY : CMakeFiles/tutserver.dir/key.cpp.o.provides
+
+CMakeFiles/tutserver.dir/key.cpp.o.provides.build: CMakeFiles/tutserver.dir/key.cpp.o
+
+
+CMakeFiles/tutserver.dir/keystore.cpp.o: CMakeFiles/tutserver.dir/flags.make
+CMakeFiles/tutserver.dir/keystore.cpp.o: ../keystore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/tutserver.dir/keystore.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/keystore.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/keystore.cpp
+
+CMakeFiles/tutserver.dir/keystore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/keystore.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/keystore.cpp > CMakeFiles/tutserver.dir/keystore.cpp.i
+
+CMakeFiles/tutserver.dir/keystore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/keystore.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/keystore.cpp -o CMakeFiles/tutserver.dir/keystore.cpp.s
+
+CMakeFiles/tutserver.dir/keystore.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutserver.dir/keystore.cpp.o.requires
+
+CMakeFiles/tutserver.dir/keystore.cpp.o.provides: CMakeFiles/tutserver.dir/keystore.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/keystore.cpp.o.provides.build
+.PHONY : CMakeFiles/tutserver.dir/keystore.cpp.o.provides
+
+CMakeFiles/tutserver.dir/keystore.cpp.o.provides.build: CMakeFiles/tutserver.dir/keystore.cpp.o
+
+
+CMakeFiles/tutserver.dir/arith_uint256.cpp.o: CMakeFiles/tutserver.dir/flags.make
+CMakeFiles/tutserver.dir/arith_uint256.cpp.o: ../arith_uint256.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/tutserver.dir/arith_uint256.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutserver.dir/arith_uint256.cpp.o -c /home/reza/development/conf-bank/v3/cb-daemon/arith_uint256.cpp
+
+CMakeFiles/tutserver.dir/arith_uint256.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutserver.dir/arith_uint256.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/development/conf-bank/v3/cb-daemon/arith_uint256.cpp > CMakeFiles/tutserver.dir/arith_uint256.cpp.i
+
+CMakeFiles/tutserver.dir/arith_uint256.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutserver.dir/arith_uint256.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/development/conf-bank/v3/cb-daemon/arith_uint256.cpp -o CMakeFiles/tutserver.dir/arith_uint256.cpp.s
+
+CMakeFiles/tutserver.dir/arith_uint256.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutserver.dir/arith_uint256.cpp.o.requires
+
+CMakeFiles/tutserver.dir/arith_uint256.cpp.o.provides: CMakeFiles/tutserver.dir/arith_uint256.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/arith_uint256.cpp.o.provides.build
+.PHONY : CMakeFiles/tutserver.dir/arith_uint256.cpp.o.provides
+
+CMakeFiles/tutserver.dir/arith_uint256.cpp.o.provides.build: CMakeFiles/tutserver.dir/arith_uint256.cpp.o
+
+
 # Object files for target tutserver
 tutserver_OBJECTS = \
-"CMakeFiles/tutserver.dir/src/serverd.cpp.o"
+"CMakeFiles/tutserver.dir/src/cb_tests.cpp.o" \
+"CMakeFiles/tutserver.dir/src/serverd.cpp.o" \
+"CMakeFiles/tutserver.dir/uint256.cpp.o" \
+"CMakeFiles/tutserver.dir/hash.cpp.o" \
+"CMakeFiles/tutserver.dir/amount.cpp.o" \
+"CMakeFiles/tutserver.dir/random.cpp.o" \
+"CMakeFiles/tutserver.dir/utilstrencodings.cpp.o" \
+"CMakeFiles/tutserver.dir/sync.cpp.o" \
+"CMakeFiles/tutserver.dir/utiltime.cpp.o" \
+"CMakeFiles/tutserver.dir/pubkey.cpp.o" \
+"CMakeFiles/tutserver.dir/util.cpp.o" \
+"CMakeFiles/tutserver.dir/key.cpp.o" \
+"CMakeFiles/tutserver.dir/keystore.cpp.o" \
+"CMakeFiles/tutserver.dir/arith_uint256.cpp.o"
 
 # External object files for target tutserver
 tutserver_EXTERNAL_OBJECTS =
 
+tutserver: CMakeFiles/tutserver.dir/src/cb_tests.cpp.o
 tutserver: CMakeFiles/tutserver.dir/src/serverd.cpp.o
+tutserver: CMakeFiles/tutserver.dir/uint256.cpp.o
+tutserver: CMakeFiles/tutserver.dir/hash.cpp.o
+tutserver: CMakeFiles/tutserver.dir/amount.cpp.o
+tutserver: CMakeFiles/tutserver.dir/random.cpp.o
+tutserver: CMakeFiles/tutserver.dir/utilstrencodings.cpp.o
+tutserver: CMakeFiles/tutserver.dir/sync.cpp.o
+tutserver: CMakeFiles/tutserver.dir/utiltime.cpp.o
+tutserver: CMakeFiles/tutserver.dir/pubkey.cpp.o
+tutserver: CMakeFiles/tutserver.dir/util.cpp.o
+tutserver: CMakeFiles/tutserver.dir/key.cpp.o
+tutserver: CMakeFiles/tutserver.dir/keystore.cpp.o
+tutserver: CMakeFiles/tutserver.dir/arith_uint256.cpp.o
 tutserver: CMakeFiles/tutserver.dir/build.make
 tutserver: src/utilities/libutilities.a
-tutserver: src/zclib/libzclib.a
+tutserver: db/libmongo_db.a
+tutserver: src/cblib/libcblib.a
 tutserver: src/zmq/libzmq.a
+tutserver: zmqpp/libzmqpp-static.a
 tutserver: /usr/lib/x86_64-linux-gnu/libboost_log.so
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_system.so
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
 tutserver: /usr/lib/x86_64-linux-gnu/libboost_log_setup.so
 tutserver: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-tutserver: /usr/lib/x86_64-linux-gnu/libboost_system.so
-tutserver: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-tutserver: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 tutserver: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 tutserver: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 tutserver: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-tutserver: /usr/lib/x86_64-linux-gnu/libzmq.so
+tutserver: /usr/local/lib/libzmq.so
+tutserver: zcash/liblibzcash.a
+tutserver: primitives/libprimitives.a
+tutserver: script/libscript.a
+tutserver: crypto/liblibcrypto.a
+tutserver: support/libsupport.a
+tutserver: consensus/libconsensus.a
+tutserver: snark/liblibsnark.a
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_log.so
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_system.so
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_log_setup.so
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+tutserver: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+tutserver: /usr/lib/x86_64-linux-gnu/libgmp.so
+tutserver: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjawt.so
+tutserver: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
 tutserver: src/utilities/libutilities.a
-tutserver: src/zclib/libzclib.a
+tutserver: src/cblib/libcblib.a
 tutserver: src/utilities/libutilities.a
-tutserver: src/zclib/libzclib.a
+tutserver: src/cblib/libcblib.a
+tutserver: db/libmongo_db.a
+tutserver: /usr/local/lib/libzmq.a
+tutserver: /usr/local/lib/libzmq.so
+tutserver: /usr/lib/x86_64-linux-gnu/libgmp.so
+tutserver: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/libjawt.so
+tutserver: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+tutserver: /usr/local/lib/libsecp256k1.so
+tutserver: /usr/local/lib/libsodium.so
+tutserver: /usr/lib/x86_64-linux-gnu/libgmpxx.a
 tutserver: CMakeFiles/tutserver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tutserver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable tutserver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tutserver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -116,7 +486,20 @@ CMakeFiles/tutserver.dir/build: tutserver
 
 .PHONY : CMakeFiles/tutserver.dir/build
 
+CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/src/cb_tests.cpp.o.requires
 CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/src/serverd.cpp.o.requires
+CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/uint256.cpp.o.requires
+CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/hash.cpp.o.requires
+CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/amount.cpp.o.requires
+CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/random.cpp.o.requires
+CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/utilstrencodings.cpp.o.requires
+CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/sync.cpp.o.requires
+CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/utiltime.cpp.o.requires
+CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/pubkey.cpp.o.requires
+CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/util.cpp.o.requires
+CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/key.cpp.o.requires
+CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/keystore.cpp.o.requires
+CMakeFiles/tutserver.dir/requires: CMakeFiles/tutserver.dir/arith_uint256.cpp.o.requires
 
 .PHONY : CMakeFiles/tutserver.dir/requires
 
@@ -125,6 +508,6 @@ CMakeFiles/tutserver.dir/clean:
 .PHONY : CMakeFiles/tutserver.dir/clean
 
 CMakeFiles/tutserver.dir/depend:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/development/conf-bank/cb-daemon /home/reza/development/conf-bank/cb-daemon /home/reza/development/conf-bank/cb-daemon/cmake-build-debug /home/reza/development/conf-bank/cb-daemon/cmake-build-debug /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles/tutserver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/reza/development/conf-bank/v3/cb-daemon /home/reza/development/conf-bank/v3/cb-daemon /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles/tutserver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tutserver.dir/depend
 

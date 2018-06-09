@@ -48,13 +48,59 @@ RM = /home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/development/conf-bank/cb-daemon
+CMAKE_SOURCE_DIR = /home/reza/development/conf-bank/v3/cb-daemon
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/development/conf-bank/cb-daemon/cmake-build-debug
+CMAKE_BINARY_DIR = /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -80,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/zmq/CMakeFiles/progress.marks
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/zmq/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles 0
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/zmq/CMakeFiles/progress.marks
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/zmq/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/zmq/clean
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/zmq/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/zmq/preinstall
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/zmq/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/zmq/preinstall
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/zmq/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/zmq/CMakeFiles/zmq.dir/rule:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/zmq/CMakeFiles/zmq.dir/rule
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/zmq/CMakeFiles/zmq.dir/rule
 .PHONY : src/zmq/CMakeFiles/zmq.dir/rule
 
 # Convenience name for target.
@@ -122,7 +168,7 @@ zmq: src/zmq/CMakeFiles/zmq.dir/rule
 
 # fast build rule for target.
 zmq/fast:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/build
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/build
 .PHONY : zmq/fast
 
 messaging_server.o: messaging_server.cpp.o
@@ -131,7 +177,7 @@ messaging_server.o: messaging_server.cpp.o
 
 # target to build an object file
 messaging_server.cpp.o:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.o
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.o
 .PHONY : messaging_server.cpp.o
 
 messaging_server.i: messaging_server.cpp.i
@@ -140,7 +186,7 @@ messaging_server.i: messaging_server.cpp.i
 
 # target to preprocess a source file
 messaging_server.cpp.i:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.i
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.i
 .PHONY : messaging_server.cpp.i
 
 messaging_server.s: messaging_server.cpp.s
@@ -149,8 +195,35 @@ messaging_server.s: messaging_server.cpp.s
 
 # target to generate assembly for a file
 messaging_server.cpp.s:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.s
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/messaging_server.cpp.s
 .PHONY : messaging_server.cpp.s
+
+request.o: request.cpp.o
+
+.PHONY : request.o
+
+# target to build an object file
+request.cpp.o:
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/request.cpp.o
+.PHONY : request.cpp.o
+
+request.i: request.cpp.i
+
+.PHONY : request.i
+
+# target to preprocess a source file
+request.cpp.i:
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/request.cpp.i
+.PHONY : request.cpp.i
+
+request.s: request.cpp.s
+
+.PHONY : request.s
+
+# target to generate assembly for a file
+request.cpp.s:
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/request.cpp.s
+.PHONY : request.cpp.s
 
 # Help Target
 help:
@@ -158,12 +231,19 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... zmq"
 	@echo "... messaging_server.o"
 	@echo "... messaging_server.i"
 	@echo "... messaging_server.s"
+	@echo "... request.o"
+	@echo "... request.i"
+	@echo "... request.s"
 .PHONY : help
 
 
@@ -175,6 +255,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

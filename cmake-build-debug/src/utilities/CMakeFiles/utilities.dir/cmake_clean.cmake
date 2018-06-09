@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/utilities.dir/utils.cpp.o"
-  "CMakeFiles/utilities.dir/logger.cpp.o"
   "libutilities.pdb"
   "libutilities.a"
 )

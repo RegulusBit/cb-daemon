@@ -48,13 +48,59 @@ RM = /home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/development/conf-bank/cb-daemon
+CMAKE_SOURCE_DIR = /home/reza/development/conf-bank/v3/cb-daemon
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/development/conf-bank/cb-daemon/cmake-build-debug
+CMAKE_BINARY_DIR = /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -80,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/src/utilities/CMakeFiles/progress.marks
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles 0
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/src/utilities/CMakeFiles/progress.marks
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/clean
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/preinstall
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/preinstall
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/utilities/CMakeFiles/utilities.dir/rule:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/CMakeFiles/utilities.dir/rule
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/utilities/CMakeFiles/utilities.dir/rule
 .PHONY : src/utilities/CMakeFiles/utilities.dir/rule
 
 # Convenience name for target.
@@ -122,35 +168,8 @@ utilities: src/utilities/CMakeFiles/utilities.dir/rule
 
 # fast build rule for target.
 utilities/fast:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/build
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/build
 .PHONY : utilities/fast
-
-logger.o: logger.cpp.o
-
-.PHONY : logger.o
-
-# target to build an object file
-logger.cpp.o:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/logger.cpp.o
-.PHONY : logger.cpp.o
-
-logger.i: logger.cpp.i
-
-.PHONY : logger.i
-
-# target to preprocess a source file
-logger.cpp.i:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/logger.cpp.i
-.PHONY : logger.cpp.i
-
-logger.s: logger.cpp.s
-
-.PHONY : logger.s
-
-# target to generate assembly for a file
-logger.cpp.s:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/logger.cpp.s
-.PHONY : logger.cpp.s
 
 utils.o: utils.cpp.o
 
@@ -158,7 +177,7 @@ utils.o: utils.cpp.o
 
 # target to build an object file
 utils.cpp.o:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/utils.cpp.o
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/utils.cpp.o
 .PHONY : utils.cpp.o
 
 utils.i: utils.cpp.i
@@ -167,7 +186,7 @@ utils.i: utils.cpp.i
 
 # target to preprocess a source file
 utils.cpp.i:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/utils.cpp.i
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
 utils.s: utils.cpp.s
@@ -176,7 +195,7 @@ utils.s: utils.cpp.s
 
 # target to generate assembly for a file
 utils.cpp.s:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/utils.cpp.s
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
 # Help Target
@@ -185,12 +204,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... utilities"
-	@echo "... logger.o"
-	@echo "... logger.i"
-	@echo "... logger.s"
 	@echo "... utils.o"
 	@echo "... utils.i"
 	@echo "... utils.s"
@@ -205,6 +225,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/reza/development/conf-bank/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -48,13 +48,59 @@ RM = /home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/development/conf-bank/cb-daemon
+CMAKE_SOURCE_DIR = /home/reza/development/conf-bank/v3/cb-daemon
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/development/conf-bank/cb-daemon/cmake-build-debug
+CMAKE_BINARY_DIR = /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -80,9 +126,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tutserver
+# Target rules for targets named daemon
 
 # Build rule for target.
-tutserver: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tutserver
-.PHONY : tutserver
+daemon: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 daemon
+.PHONY : daemon
 
 # fast build rule for target.
-tutserver/fast:
-	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/build
-.PHONY : tutserver/fast
+daemon/fast:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/build
+.PHONY : daemon/fast
 
 #=============================================================================
 # Target rules for targets named utilities
@@ -137,17 +183,17 @@ utilities/fast:
 .PHONY : utilities/fast
 
 #=============================================================================
-# Target rules for targets named zclib
+# Target rules for targets named cblib
 
 # Build rule for target.
-zclib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 zclib
-.PHONY : zclib
+cblib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cblib
+.PHONY : cblib
 
 # fast build rule for target.
-zclib/fast:
-	$(MAKE) -f src/zclib/CMakeFiles/zclib.dir/build.make src/zclib/CMakeFiles/zclib.dir/build
-.PHONY : zclib/fast
+cblib/fast:
+	$(MAKE) -f src/cblib/CMakeFiles/cblib.dir/build.make src/cblib/CMakeFiles/cblib.dir/build
+.PHONY : cblib/fast
 
 #=============================================================================
 # Target rules for targets named zmq
@@ -162,13 +208,372 @@ zmq/fast:
 	$(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/build
 .PHONY : zmq/fast
 
+#=============================================================================
+# Target rules for targets named libzcash
+
+# Build rule for target.
+libzcash: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libzcash
+.PHONY : libzcash
+
+# fast build rule for target.
+libzcash/fast:
+	$(MAKE) -f zcash/CMakeFiles/libzcash.dir/build.make zcash/CMakeFiles/libzcash.dir/build
+.PHONY : libzcash/fast
+
+#=============================================================================
+# Target rules for targets named primitives
+
+# Build rule for target.
+primitives: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 primitives
+.PHONY : primitives
+
+# fast build rule for target.
+primitives/fast:
+	$(MAKE) -f primitives/CMakeFiles/primitives.dir/build.make primitives/CMakeFiles/primitives.dir/build
+.PHONY : primitives/fast
+
+#=============================================================================
+# Target rules for targets named script
+
+# Build rule for target.
+script: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 script
+.PHONY : script
+
+# fast build rule for target.
+script/fast:
+	$(MAKE) -f script/CMakeFiles/script.dir/build.make script/CMakeFiles/script.dir/build
+.PHONY : script/fast
+
+#=============================================================================
+# Target rules for targets named libcrypto
+
+# Build rule for target.
+libcrypto: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libcrypto
+.PHONY : libcrypto
+
+# fast build rule for target.
+libcrypto/fast:
+	$(MAKE) -f crypto/CMakeFiles/libcrypto.dir/build.make crypto/CMakeFiles/libcrypto.dir/build
+.PHONY : libcrypto/fast
+
+#=============================================================================
+# Target rules for targets named consensus
+
+# Build rule for target.
+consensus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 consensus
+.PHONY : consensus
+
+# fast build rule for target.
+consensus/fast:
+	$(MAKE) -f consensus/CMakeFiles/consensus.dir/build.make consensus/CMakeFiles/consensus.dir/build
+.PHONY : consensus/fast
+
+#=============================================================================
+# Target rules for targets named libsnark
+
+# Build rule for target.
+libsnark: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libsnark
+.PHONY : libsnark
+
+# fast build rule for target.
+libsnark/fast:
+	$(MAKE) -f snark/CMakeFiles/libsnark.dir/build.make snark/CMakeFiles/libsnark.dir/build
+.PHONY : libsnark/fast
+
+#=============================================================================
+# Target rules for targets named support
+
+# Build rule for target.
+support: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 support
+.PHONY : support
+
+# fast build rule for target.
+support/fast:
+	$(MAKE) -f support/CMakeFiles/support.dir/build.make support/CMakeFiles/support.dir/build
+.PHONY : support/fast
+
+#=============================================================================
+# Target rules for targets named mongo_db
+
+# Build rule for target.
+mongo_db: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mongo_db
+.PHONY : mongo_db
+
+# fast build rule for target.
+mongo_db/fast:
+	$(MAKE) -f db/CMakeFiles/mongo_db.dir/build.make db/CMakeFiles/mongo_db.dir/build
+.PHONY : mongo_db/fast
+
+#=============================================================================
+# Target rules for targets named zmqpp
+
+# Build rule for target.
+zmqpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zmqpp
+.PHONY : zmqpp
+
+# fast build rule for target.
+zmqpp/fast:
+	$(MAKE) -f zmqpp/CMakeFiles/zmqpp.dir/build.make zmqpp/CMakeFiles/zmqpp.dir/build
+.PHONY : zmqpp/fast
+
+#=============================================================================
+# Target rules for targets named zmqpp-static
+
+# Build rule for target.
+zmqpp-static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zmqpp-static
+.PHONY : zmqpp-static
+
+# fast build rule for target.
+zmqpp-static/fast:
+	$(MAKE) -f zmqpp/CMakeFiles/zmqpp-static.dir/build.make zmqpp/CMakeFiles/zmqpp-static.dir/build
+.PHONY : zmqpp-static/fast
+
+#=============================================================================
+# Target rules for targets named hashidsxx
+
+# Build rule for target.
+hashidsxx: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hashidsxx
+.PHONY : hashidsxx
+
+# fast build rule for target.
+hashidsxx/fast:
+	$(MAKE) -f src/hashidsxx/CMakeFiles/hashidsxx.dir/build.make src/hashidsxx/CMakeFiles/hashidsxx.dir/build
+.PHONY : hashidsxx/fast
+
+amount.o: amount.cpp.o
+
+.PHONY : amount.o
+
+# target to build an object file
+amount.cpp.o:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/amount.cpp.o
+.PHONY : amount.cpp.o
+
+amount.i: amount.cpp.i
+
+.PHONY : amount.i
+
+# target to preprocess a source file
+amount.cpp.i:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/amount.cpp.i
+.PHONY : amount.cpp.i
+
+amount.s: amount.cpp.s
+
+.PHONY : amount.s
+
+# target to generate assembly for a file
+amount.cpp.s:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/amount.cpp.s
+.PHONY : amount.cpp.s
+
+arith_uint256.o: arith_uint256.cpp.o
+
+.PHONY : arith_uint256.o
+
+# target to build an object file
+arith_uint256.cpp.o:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/arith_uint256.cpp.o
+.PHONY : arith_uint256.cpp.o
+
+arith_uint256.i: arith_uint256.cpp.i
+
+.PHONY : arith_uint256.i
+
+# target to preprocess a source file
+arith_uint256.cpp.i:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/arith_uint256.cpp.i
+.PHONY : arith_uint256.cpp.i
+
+arith_uint256.s: arith_uint256.cpp.s
+
+.PHONY : arith_uint256.s
+
+# target to generate assembly for a file
+arith_uint256.cpp.s:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/arith_uint256.cpp.s
+.PHONY : arith_uint256.cpp.s
+
+hash.o: hash.cpp.o
+
+.PHONY : hash.o
+
+# target to build an object file
+hash.cpp.o:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/hash.cpp.o
+.PHONY : hash.cpp.o
+
+hash.i: hash.cpp.i
+
+.PHONY : hash.i
+
+# target to preprocess a source file
+hash.cpp.i:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/hash.cpp.i
+.PHONY : hash.cpp.i
+
+hash.s: hash.cpp.s
+
+.PHONY : hash.s
+
+# target to generate assembly for a file
+hash.cpp.s:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/hash.cpp.s
+.PHONY : hash.cpp.s
+
+key.o: key.cpp.o
+
+.PHONY : key.o
+
+# target to build an object file
+key.cpp.o:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/key.cpp.o
+.PHONY : key.cpp.o
+
+key.i: key.cpp.i
+
+.PHONY : key.i
+
+# target to preprocess a source file
+key.cpp.i:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/key.cpp.i
+.PHONY : key.cpp.i
+
+key.s: key.cpp.s
+
+.PHONY : key.s
+
+# target to generate assembly for a file
+key.cpp.s:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/key.cpp.s
+.PHONY : key.cpp.s
+
+keystore.o: keystore.cpp.o
+
+.PHONY : keystore.o
+
+# target to build an object file
+keystore.cpp.o:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/keystore.cpp.o
+.PHONY : keystore.cpp.o
+
+keystore.i: keystore.cpp.i
+
+.PHONY : keystore.i
+
+# target to preprocess a source file
+keystore.cpp.i:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/keystore.cpp.i
+.PHONY : keystore.cpp.i
+
+keystore.s: keystore.cpp.s
+
+.PHONY : keystore.s
+
+# target to generate assembly for a file
+keystore.cpp.s:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/keystore.cpp.s
+.PHONY : keystore.cpp.s
+
+pubkey.o: pubkey.cpp.o
+
+.PHONY : pubkey.o
+
+# target to build an object file
+pubkey.cpp.o:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/pubkey.cpp.o
+.PHONY : pubkey.cpp.o
+
+pubkey.i: pubkey.cpp.i
+
+.PHONY : pubkey.i
+
+# target to preprocess a source file
+pubkey.cpp.i:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/pubkey.cpp.i
+.PHONY : pubkey.cpp.i
+
+pubkey.s: pubkey.cpp.s
+
+.PHONY : pubkey.s
+
+# target to generate assembly for a file
+pubkey.cpp.s:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/pubkey.cpp.s
+.PHONY : pubkey.cpp.s
+
+random.o: random.cpp.o
+
+.PHONY : random.o
+
+# target to build an object file
+random.cpp.o:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/random.cpp.o
+.PHONY : random.cpp.o
+
+random.i: random.cpp.i
+
+.PHONY : random.i
+
+# target to preprocess a source file
+random.cpp.i:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/random.cpp.i
+.PHONY : random.cpp.i
+
+random.s: random.cpp.s
+
+.PHONY : random.s
+
+# target to generate assembly for a file
+random.cpp.s:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/random.cpp.s
+.PHONY : random.cpp.s
+
+src/cb_tests.o: src/cb_tests.cpp.o
+
+.PHONY : src/cb_tests.o
+
+# target to build an object file
+src/cb_tests.cpp.o:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/src/cb_tests.cpp.o
+.PHONY : src/cb_tests.cpp.o
+
+src/cb_tests.i: src/cb_tests.cpp.i
+
+.PHONY : src/cb_tests.i
+
+# target to preprocess a source file
+src/cb_tests.cpp.i:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/src/cb_tests.cpp.i
+.PHONY : src/cb_tests.cpp.i
+
+src/cb_tests.s: src/cb_tests.cpp.s
+
+.PHONY : src/cb_tests.s
+
+# target to generate assembly for a file
+src/cb_tests.cpp.s:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/src/cb_tests.cpp.s
+.PHONY : src/cb_tests.cpp.s
+
 src/serverd.o: src/serverd.cpp.o
 
 .PHONY : src/serverd.o
 
 # target to build an object file
 src/serverd.cpp.o:
-	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/src/serverd.cpp.o
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/src/serverd.cpp.o
 .PHONY : src/serverd.cpp.o
 
 src/serverd.i: src/serverd.cpp.i
@@ -177,7 +582,7 @@ src/serverd.i: src/serverd.cpp.i
 
 # target to preprocess a source file
 src/serverd.cpp.i:
-	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/src/serverd.cpp.i
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/src/serverd.cpp.i
 .PHONY : src/serverd.cpp.i
 
 src/serverd.s: src/serverd.cpp.s
@@ -186,8 +591,143 @@ src/serverd.s: src/serverd.cpp.s
 
 # target to generate assembly for a file
 src/serverd.cpp.s:
-	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/src/serverd.cpp.s
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/src/serverd.cpp.s
 .PHONY : src/serverd.cpp.s
+
+sync.o: sync.cpp.o
+
+.PHONY : sync.o
+
+# target to build an object file
+sync.cpp.o:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/sync.cpp.o
+.PHONY : sync.cpp.o
+
+sync.i: sync.cpp.i
+
+.PHONY : sync.i
+
+# target to preprocess a source file
+sync.cpp.i:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/sync.cpp.i
+.PHONY : sync.cpp.i
+
+sync.s: sync.cpp.s
+
+.PHONY : sync.s
+
+# target to generate assembly for a file
+sync.cpp.s:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/sync.cpp.s
+.PHONY : sync.cpp.s
+
+uint256.o: uint256.cpp.o
+
+.PHONY : uint256.o
+
+# target to build an object file
+uint256.cpp.o:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/uint256.cpp.o
+.PHONY : uint256.cpp.o
+
+uint256.i: uint256.cpp.i
+
+.PHONY : uint256.i
+
+# target to preprocess a source file
+uint256.cpp.i:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/uint256.cpp.i
+.PHONY : uint256.cpp.i
+
+uint256.s: uint256.cpp.s
+
+.PHONY : uint256.s
+
+# target to generate assembly for a file
+uint256.cpp.s:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/uint256.cpp.s
+.PHONY : uint256.cpp.s
+
+util.o: util.cpp.o
+
+.PHONY : util.o
+
+# target to build an object file
+util.cpp.o:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/util.cpp.o
+.PHONY : util.cpp.o
+
+util.i: util.cpp.i
+
+.PHONY : util.i
+
+# target to preprocess a source file
+util.cpp.i:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/util.cpp.i
+.PHONY : util.cpp.i
+
+util.s: util.cpp.s
+
+.PHONY : util.s
+
+# target to generate assembly for a file
+util.cpp.s:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/util.cpp.s
+.PHONY : util.cpp.s
+
+utilstrencodings.o: utilstrencodings.cpp.o
+
+.PHONY : utilstrencodings.o
+
+# target to build an object file
+utilstrencodings.cpp.o:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/utilstrencodings.cpp.o
+.PHONY : utilstrencodings.cpp.o
+
+utilstrencodings.i: utilstrencodings.cpp.i
+
+.PHONY : utilstrencodings.i
+
+# target to preprocess a source file
+utilstrencodings.cpp.i:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/utilstrencodings.cpp.i
+.PHONY : utilstrencodings.cpp.i
+
+utilstrencodings.s: utilstrencodings.cpp.s
+
+.PHONY : utilstrencodings.s
+
+# target to generate assembly for a file
+utilstrencodings.cpp.s:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/utilstrencodings.cpp.s
+.PHONY : utilstrencodings.cpp.s
+
+utiltime.o: utiltime.cpp.o
+
+.PHONY : utiltime.o
+
+# target to build an object file
+utiltime.cpp.o:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/utiltime.cpp.o
+.PHONY : utiltime.cpp.o
+
+utiltime.i: utiltime.cpp.i
+
+.PHONY : utiltime.i
+
+# target to preprocess a source file
+utiltime.cpp.i:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/utiltime.cpp.i
+.PHONY : utiltime.cpp.i
+
+utiltime.s: utiltime.cpp.s
+
+.PHONY : utiltime.s
+
+# target to generate assembly for a file
+utiltime.cpp.s:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/utiltime.cpp.s
+.PHONY : utiltime.cpp.s
 
 # Help Target
 help:
@@ -195,15 +735,69 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... tutserver"
+	@echo "... daemon"
 	@echo "... utilities"
-	@echo "... zclib"
+	@echo "... cblib"
 	@echo "... zmq"
+	@echo "... libzcash"
+	@echo "... primitives"
+	@echo "... script"
+	@echo "... libcrypto"
+	@echo "... consensus"
+	@echo "... libsnark"
+	@echo "... support"
+	@echo "... mongo_db"
+	@echo "... zmqpp"
+	@echo "... zmqpp-static"
+	@echo "... hashidsxx"
+	@echo "... amount.o"
+	@echo "... amount.i"
+	@echo "... amount.s"
+	@echo "... arith_uint256.o"
+	@echo "... arith_uint256.i"
+	@echo "... arith_uint256.s"
+	@echo "... hash.o"
+	@echo "... hash.i"
+	@echo "... hash.s"
+	@echo "... key.o"
+	@echo "... key.i"
+	@echo "... key.s"
+	@echo "... keystore.o"
+	@echo "... keystore.i"
+	@echo "... keystore.s"
+	@echo "... pubkey.o"
+	@echo "... pubkey.i"
+	@echo "... pubkey.s"
+	@echo "... random.o"
+	@echo "... random.i"
+	@echo "... random.s"
+	@echo "... src/cb_tests.o"
+	@echo "... src/cb_tests.i"
+	@echo "... src/cb_tests.s"
 	@echo "... src/serverd.o"
 	@echo "... src/serverd.i"
 	@echo "... src/serverd.s"
+	@echo "... sync.o"
+	@echo "... sync.i"
+	@echo "... sync.s"
+	@echo "... uint256.o"
+	@echo "... uint256.i"
+	@echo "... uint256.s"
+	@echo "... util.o"
+	@echo "... util.i"
+	@echo "... util.s"
+	@echo "... utilstrencodings.o"
+	@echo "... utilstrencodings.i"
+	@echo "... utilstrencodings.s"
+	@echo "... utiltime.o"
+	@echo "... utiltime.i"
+	@echo "... utiltime.s"
 .PHONY : help
 
 

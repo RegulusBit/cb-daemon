@@ -54,46 +54,55 @@ RM = /home/reza/CLion/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/reza/development/conf-bank/cb-daemon
+CMAKE_SOURCE_DIR = /home/reza/development/conf-bank/v3/cb-daemon
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/reza/development/conf-bank/cb-daemon/cmake-build-debug
+CMAKE_BINARY_DIR = /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/tutserver.dir
+# Target rules for target CMakeFiles/daemon.dir
 
 # All Build rule for target.
-CMakeFiles/tutserver.dir/all: src/zmq/CMakeFiles/zmq.dir/all
-CMakeFiles/tutserver.dir/all: src/utilities/CMakeFiles/utilities.dir/all
-	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/depend
-	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target tutserver"
-.PHONY : CMakeFiles/tutserver.dir/all
+CMakeFiles/daemon.dir/all: src/utilities/CMakeFiles/utilities.dir/all
+CMakeFiles/daemon.dir/all: zcash/CMakeFiles/libzcash.dir/all
+CMakeFiles/daemon.dir/all: primitives/CMakeFiles/primitives.dir/all
+CMakeFiles/daemon.dir/all: script/CMakeFiles/script.dir/all
+CMakeFiles/daemon.dir/all: crypto/CMakeFiles/libcrypto.dir/all
+CMakeFiles/daemon.dir/all: consensus/CMakeFiles/consensus.dir/all
+CMakeFiles/daemon.dir/all: snark/CMakeFiles/libsnark.dir/all
+CMakeFiles/daemon.dir/all: support/CMakeFiles/support.dir/all
+CMakeFiles/daemon.dir/all: db/CMakeFiles/mongo_db.dir/all
+CMakeFiles/daemon.dir/all: zmqpp/CMakeFiles/zmqpp-static.dir/all
+CMakeFiles/daemon.dir/all: src/hashidsxx/CMakeFiles/hashidsxx.dir/all
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/depend
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target daemon"
+.PHONY : CMakeFiles/daemon.dir/all
 
 # Include target in all.
-all: CMakeFiles/tutserver.dir/all
+all: CMakeFiles/daemon.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/tutserver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tutserver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/tutserver.dir/rule
+CMakeFiles/daemon.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 85
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/daemon.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/daemon.dir/rule
 
 # Convenience name for target.
-tutserver: CMakeFiles/tutserver.dir/rule
+daemon: CMakeFiles/daemon.dir/rule
 
-.PHONY : tutserver
-
-# clean rule for target.
-CMakeFiles/tutserver.dir/clean:
-	$(MAKE) -f CMakeFiles/tutserver.dir/build.make CMakeFiles/tutserver.dir/clean
-.PHONY : CMakeFiles/tutserver.dir/clean
+.PHONY : daemon
 
 # clean rule for target.
-clean: CMakeFiles/tutserver.dir/clean
+CMakeFiles/daemon.dir/clean:
+	$(MAKE) -f CMakeFiles/daemon.dir/build.make CMakeFiles/daemon.dir/clean
+.PHONY : CMakeFiles/daemon.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/daemon.dir/clean
 
 .PHONY : clean
 
@@ -119,10 +128,10 @@ src/utilities/preinstall:
 # Target rules for target src/utilities/CMakeFiles/utilities.dir
 
 # All Build rule for target.
-src/utilities/CMakeFiles/utilities.dir/all: src/zclib/CMakeFiles/zclib.dir/all
+src/utilities/CMakeFiles/utilities.dir/all: src/cblib/CMakeFiles/cblib.dir/all
 	$(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/depend
 	$(MAKE) -f src/utilities/CMakeFiles/utilities.dir/build.make src/utilities/CMakeFiles/utilities.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target utilities"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=67,68 "Built target utilities"
 .PHONY : src/utilities/CMakeFiles/utilities.dir/all
 
 # Include target in all.
@@ -132,9 +141,9 @@ all: src/utilities/CMakeFiles/utilities.dir/all
 
 # Build rule for subdir invocation for target.
 src/utilities/CMakeFiles/utilities.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 src/utilities/CMakeFiles/utilities.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
 .PHONY : src/utilities/CMakeFiles/utilities.dir/rule
 
 # Convenience name for target.
@@ -153,57 +162,57 @@ clean: src/utilities/CMakeFiles/utilities.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory src/zclib
+# Directory level rules for directory src/cblib
 
 # Convenience name for "all" pass in the directory.
-src/zclib/all: src/zclib/CMakeFiles/zclib.dir/all
+src/cblib/all: src/cblib/CMakeFiles/cblib.dir/all
 
-.PHONY : src/zclib/all
+.PHONY : src/cblib/all
 
 # Convenience name for "clean" pass in the directory.
-src/zclib/clean: src/zclib/CMakeFiles/zclib.dir/clean
+src/cblib/clean: src/cblib/CMakeFiles/cblib.dir/clean
 
-.PHONY : src/zclib/clean
+.PHONY : src/cblib/clean
 
 # Convenience name for "preinstall" pass in the directory.
-src/zclib/preinstall:
+src/cblib/preinstall:
 
-.PHONY : src/zclib/preinstall
+.PHONY : src/cblib/preinstall
 
 #=============================================================================
-# Target rules for target src/zclib/CMakeFiles/zclib.dir
+# Target rules for target src/cblib/CMakeFiles/cblib.dir
 
 # All Build rule for target.
-src/zclib/CMakeFiles/zclib.dir/all:
-	$(MAKE) -f src/zclib/CMakeFiles/zclib.dir/build.make src/zclib/CMakeFiles/zclib.dir/depend
-	$(MAKE) -f src/zclib/CMakeFiles/zclib.dir/build.make src/zclib/CMakeFiles/zclib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target zclib"
-.PHONY : src/zclib/CMakeFiles/zclib.dir/all
+src/cblib/CMakeFiles/cblib.dir/all: src/zmq/CMakeFiles/zmq.dir/all
+	$(MAKE) -f src/cblib/CMakeFiles/cblib.dir/build.make src/cblib/CMakeFiles/cblib.dir/depend
+	$(MAKE) -f src/cblib/CMakeFiles/cblib.dir/build.make src/cblib/CMakeFiles/cblib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target cblib"
+.PHONY : src/cblib/CMakeFiles/cblib.dir/all
 
 # Include target in all.
-all: src/zclib/CMakeFiles/zclib.dir/all
+all: src/cblib/CMakeFiles/cblib.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-src/zclib/CMakeFiles/zclib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 src/zclib/CMakeFiles/zclib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles 0
-.PHONY : src/zclib/CMakeFiles/zclib.dir/rule
+src/cblib/CMakeFiles/cblib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 src/cblib/CMakeFiles/cblib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
+.PHONY : src/cblib/CMakeFiles/cblib.dir/rule
 
 # Convenience name for target.
-zclib: src/zclib/CMakeFiles/zclib.dir/rule
+cblib: src/cblib/CMakeFiles/cblib.dir/rule
 
-.PHONY : zclib
-
-# clean rule for target.
-src/zclib/CMakeFiles/zclib.dir/clean:
-	$(MAKE) -f src/zclib/CMakeFiles/zclib.dir/build.make src/zclib/CMakeFiles/zclib.dir/clean
-.PHONY : src/zclib/CMakeFiles/zclib.dir/clean
+.PHONY : cblib
 
 # clean rule for target.
-clean: src/zclib/CMakeFiles/zclib.dir/clean
+src/cblib/CMakeFiles/cblib.dir/clean:
+	$(MAKE) -f src/cblib/CMakeFiles/cblib.dir/build.make src/cblib/CMakeFiles/cblib.dir/clean
+.PHONY : src/cblib/CMakeFiles/cblib.dir/clean
+
+# clean rule for target.
+clean: src/cblib/CMakeFiles/cblib.dir/clean
 
 .PHONY : clean
 
@@ -229,10 +238,10 @@ src/zmq/preinstall:
 # Target rules for target src/zmq/CMakeFiles/zmq.dir
 
 # All Build rule for target.
-src/zmq/CMakeFiles/zmq.dir/all: src/utilities/CMakeFiles/utilities.dir/all
+src/zmq/CMakeFiles/zmq.dir/all: db/CMakeFiles/mongo_db.dir/all
 	$(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/depend
 	$(MAKE) -f src/zmq/CMakeFiles/zmq.dir/build.make src/zmq/CMakeFiles/zmq.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target zmq"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=69,70 "Built target zmq"
 .PHONY : src/zmq/CMakeFiles/zmq.dir/all
 
 # Include target in all.
@@ -242,9 +251,9 @@ all: src/zmq/CMakeFiles/zmq.dir/all
 
 # Build rule for subdir invocation for target.
 src/zmq/CMakeFiles/zmq.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 src/zmq/CMakeFiles/zmq.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/cb-daemon/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
 .PHONY : src/zmq/CMakeFiles/zmq.dir/rule
 
 # Convenience name for target.
@@ -259,6 +268,595 @@ src/zmq/CMakeFiles/zmq.dir/clean:
 
 # clean rule for target.
 clean: src/zmq/CMakeFiles/zmq.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory zcash
+
+# Convenience name for "all" pass in the directory.
+zcash/all: zcash/CMakeFiles/libzcash.dir/all
+
+.PHONY : zcash/all
+
+# Convenience name for "clean" pass in the directory.
+zcash/clean: zcash/CMakeFiles/libzcash.dir/clean
+
+.PHONY : zcash/clean
+
+# Convenience name for "preinstall" pass in the directory.
+zcash/preinstall:
+
+.PHONY : zcash/preinstall
+
+#=============================================================================
+# Target rules for target zcash/CMakeFiles/libzcash.dir
+
+# All Build rule for target.
+zcash/CMakeFiles/libzcash.dir/all:
+	$(MAKE) -f zcash/CMakeFiles/libzcash.dir/build.make zcash/CMakeFiles/libzcash.dir/depend
+	$(MAKE) -f zcash/CMakeFiles/libzcash.dir/build.make zcash/CMakeFiles/libzcash.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=45,46,47,48,49,50,51,52,53 "Built target libzcash"
+.PHONY : zcash/CMakeFiles/libzcash.dir/all
+
+# Include target in all.
+all: zcash/CMakeFiles/libzcash.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+zcash/CMakeFiles/libzcash.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 zcash/CMakeFiles/libzcash.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
+.PHONY : zcash/CMakeFiles/libzcash.dir/rule
+
+# Convenience name for target.
+libzcash: zcash/CMakeFiles/libzcash.dir/rule
+
+.PHONY : libzcash
+
+# clean rule for target.
+zcash/CMakeFiles/libzcash.dir/clean:
+	$(MAKE) -f zcash/CMakeFiles/libzcash.dir/build.make zcash/CMakeFiles/libzcash.dir/clean
+.PHONY : zcash/CMakeFiles/libzcash.dir/clean
+
+# clean rule for target.
+clean: zcash/CMakeFiles/libzcash.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory primitives
+
+# Convenience name for "all" pass in the directory.
+primitives/all: primitives/CMakeFiles/primitives.dir/all
+
+.PHONY : primitives/all
+
+# Convenience name for "clean" pass in the directory.
+primitives/clean: primitives/CMakeFiles/primitives.dir/clean
+
+.PHONY : primitives/clean
+
+# Convenience name for "preinstall" pass in the directory.
+primitives/preinstall:
+
+.PHONY : primitives/preinstall
+
+#=============================================================================
+# Target rules for target primitives/CMakeFiles/primitives.dir
+
+# All Build rule for target.
+primitives/CMakeFiles/primitives.dir/all: zcash/CMakeFiles/libzcash.dir/all
+	$(MAKE) -f primitives/CMakeFiles/primitives.dir/build.make primitives/CMakeFiles/primitives.dir/depend
+	$(MAKE) -f primitives/CMakeFiles/primitives.dir/build.make primitives/CMakeFiles/primitives.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=56,57 "Built target primitives"
+.PHONY : primitives/CMakeFiles/primitives.dir/all
+
+# Include target in all.
+all: primitives/CMakeFiles/primitives.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+primitives/CMakeFiles/primitives.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 primitives/CMakeFiles/primitives.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
+.PHONY : primitives/CMakeFiles/primitives.dir/rule
+
+# Convenience name for target.
+primitives: primitives/CMakeFiles/primitives.dir/rule
+
+.PHONY : primitives
+
+# clean rule for target.
+primitives/CMakeFiles/primitives.dir/clean:
+	$(MAKE) -f primitives/CMakeFiles/primitives.dir/build.make primitives/CMakeFiles/primitives.dir/clean
+.PHONY : primitives/CMakeFiles/primitives.dir/clean
+
+# clean rule for target.
+clean: primitives/CMakeFiles/primitives.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory script
+
+# Convenience name for "all" pass in the directory.
+script/all: script/CMakeFiles/script.dir/all
+
+.PHONY : script/all
+
+# Convenience name for "clean" pass in the directory.
+script/clean: script/CMakeFiles/script.dir/clean
+
+.PHONY : script/clean
+
+# Convenience name for "preinstall" pass in the directory.
+script/preinstall:
+
+.PHONY : script/preinstall
+
+#=============================================================================
+# Target rules for target script/CMakeFiles/script.dir
+
+# All Build rule for target.
+script/CMakeFiles/script.dir/all:
+	$(MAKE) -f script/CMakeFiles/script.dir/build.make script/CMakeFiles/script.dir/depend
+	$(MAKE) -f script/CMakeFiles/script.dir/build.make script/CMakeFiles/script.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=58,59,60,61,62,63,64 "Built target script"
+.PHONY : script/CMakeFiles/script.dir/all
+
+# Include target in all.
+all: script/CMakeFiles/script.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+script/CMakeFiles/script.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 script/CMakeFiles/script.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
+.PHONY : script/CMakeFiles/script.dir/rule
+
+# Convenience name for target.
+script: script/CMakeFiles/script.dir/rule
+
+.PHONY : script
+
+# clean rule for target.
+script/CMakeFiles/script.dir/clean:
+	$(MAKE) -f script/CMakeFiles/script.dir/build.make script/CMakeFiles/script.dir/clean
+.PHONY : script/CMakeFiles/script.dir/clean
+
+# clean rule for target.
+clean: script/CMakeFiles/script.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory crypto
+
+# Convenience name for "all" pass in the directory.
+crypto/all: crypto/CMakeFiles/libcrypto.dir/all
+
+.PHONY : crypto/all
+
+# Convenience name for "clean" pass in the directory.
+crypto/clean: crypto/CMakeFiles/libcrypto.dir/clean
+
+.PHONY : crypto/clean
+
+# Convenience name for "preinstall" pass in the directory.
+crypto/preinstall:
+
+.PHONY : crypto/preinstall
+
+#=============================================================================
+# Target rules for target crypto/CMakeFiles/libcrypto.dir
+
+# All Build rule for target.
+crypto/CMakeFiles/libcrypto.dir/all:
+	$(MAKE) -f crypto/CMakeFiles/libcrypto.dir/build.make crypto/CMakeFiles/libcrypto.dir/depend
+	$(MAKE) -f crypto/CMakeFiles/libcrypto.dir/build.make crypto/CMakeFiles/libcrypto.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=23,24,25,26,27,28,29 "Built target libcrypto"
+.PHONY : crypto/CMakeFiles/libcrypto.dir/all
+
+# Include target in all.
+all: crypto/CMakeFiles/libcrypto.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+crypto/CMakeFiles/libcrypto.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 crypto/CMakeFiles/libcrypto.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
+.PHONY : crypto/CMakeFiles/libcrypto.dir/rule
+
+# Convenience name for target.
+libcrypto: crypto/CMakeFiles/libcrypto.dir/rule
+
+.PHONY : libcrypto
+
+# clean rule for target.
+crypto/CMakeFiles/libcrypto.dir/clean:
+	$(MAKE) -f crypto/CMakeFiles/libcrypto.dir/build.make crypto/CMakeFiles/libcrypto.dir/clean
+.PHONY : crypto/CMakeFiles/libcrypto.dir/clean
+
+# clean rule for target.
+clean: crypto/CMakeFiles/libcrypto.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory consensus
+
+# Convenience name for "all" pass in the directory.
+consensus/all: consensus/CMakeFiles/consensus.dir/all
+
+.PHONY : consensus/all
+
+# Convenience name for "clean" pass in the directory.
+consensus/clean: consensus/CMakeFiles/consensus.dir/clean
+
+.PHONY : consensus/clean
+
+# Convenience name for "preinstall" pass in the directory.
+consensus/preinstall:
+
+.PHONY : consensus/preinstall
+
+#=============================================================================
+# Target rules for target consensus/CMakeFiles/consensus.dir
+
+# All Build rule for target.
+consensus/CMakeFiles/consensus.dir/all:
+	$(MAKE) -f consensus/CMakeFiles/consensus.dir/build.make consensus/CMakeFiles/consensus.dir/depend
+	$(MAKE) -f consensus/CMakeFiles/consensus.dir/build.make consensus/CMakeFiles/consensus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=6 "Built target consensus"
+.PHONY : consensus/CMakeFiles/consensus.dir/all
+
+# Include target in all.
+all: consensus/CMakeFiles/consensus.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+consensus/CMakeFiles/consensus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 consensus/CMakeFiles/consensus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
+.PHONY : consensus/CMakeFiles/consensus.dir/rule
+
+# Convenience name for target.
+consensus: consensus/CMakeFiles/consensus.dir/rule
+
+.PHONY : consensus
+
+# clean rule for target.
+consensus/CMakeFiles/consensus.dir/clean:
+	$(MAKE) -f consensus/CMakeFiles/consensus.dir/build.make consensus/CMakeFiles/consensus.dir/clean
+.PHONY : consensus/CMakeFiles/consensus.dir/clean
+
+# clean rule for target.
+clean: consensus/CMakeFiles/consensus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory snark
+
+# Convenience name for "all" pass in the directory.
+snark/all: snark/CMakeFiles/libsnark.dir/all
+
+.PHONY : snark/all
+
+# Convenience name for "clean" pass in the directory.
+snark/clean: snark/CMakeFiles/libsnark.dir/clean
+
+.PHONY : snark/clean
+
+# Convenience name for "preinstall" pass in the directory.
+snark/preinstall:
+
+.PHONY : snark/preinstall
+
+#=============================================================================
+# Target rules for target snark/CMakeFiles/libsnark.dir
+
+# All Build rule for target.
+snark/CMakeFiles/libsnark.dir/all:
+	$(MAKE) -f snark/CMakeFiles/libsnark.dir/build.make snark/CMakeFiles/libsnark.dir/depend
+	$(MAKE) -f snark/CMakeFiles/libsnark.dir/build.make snark/CMakeFiles/libsnark.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 "Built target libsnark"
+.PHONY : snark/CMakeFiles/libsnark.dir/all
+
+# Include target in all.
+all: snark/CMakeFiles/libsnark.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+snark/CMakeFiles/libsnark.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 15
+	$(MAKE) -f CMakeFiles/Makefile2 snark/CMakeFiles/libsnark.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
+.PHONY : snark/CMakeFiles/libsnark.dir/rule
+
+# Convenience name for target.
+libsnark: snark/CMakeFiles/libsnark.dir/rule
+
+.PHONY : libsnark
+
+# clean rule for target.
+snark/CMakeFiles/libsnark.dir/clean:
+	$(MAKE) -f snark/CMakeFiles/libsnark.dir/build.make snark/CMakeFiles/libsnark.dir/clean
+.PHONY : snark/CMakeFiles/libsnark.dir/clean
+
+# clean rule for target.
+clean: snark/CMakeFiles/libsnark.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory support
+
+# Convenience name for "all" pass in the directory.
+support/all: support/CMakeFiles/support.dir/all
+
+.PHONY : support/all
+
+# Convenience name for "clean" pass in the directory.
+support/clean: support/CMakeFiles/support.dir/clean
+
+.PHONY : support/clean
+
+# Convenience name for "preinstall" pass in the directory.
+support/preinstall:
+
+.PHONY : support/preinstall
+
+#=============================================================================
+# Target rules for target support/CMakeFiles/support.dir
+
+# All Build rule for target.
+support/CMakeFiles/support.dir/all:
+	$(MAKE) -f support/CMakeFiles/support.dir/build.make support/CMakeFiles/support.dir/depend
+	$(MAKE) -f support/CMakeFiles/support.dir/build.make support/CMakeFiles/support.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=65,66 "Built target support"
+.PHONY : support/CMakeFiles/support.dir/all
+
+# Include target in all.
+all: support/CMakeFiles/support.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+support/CMakeFiles/support.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 support/CMakeFiles/support.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
+.PHONY : support/CMakeFiles/support.dir/rule
+
+# Convenience name for target.
+support: support/CMakeFiles/support.dir/rule
+
+.PHONY : support
+
+# clean rule for target.
+support/CMakeFiles/support.dir/clean:
+	$(MAKE) -f support/CMakeFiles/support.dir/build.make support/CMakeFiles/support.dir/clean
+.PHONY : support/CMakeFiles/support.dir/clean
+
+# clean rule for target.
+clean: support/CMakeFiles/support.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory db
+
+# Convenience name for "all" pass in the directory.
+db/all: db/CMakeFiles/mongo_db.dir/all
+
+.PHONY : db/all
+
+# Convenience name for "clean" pass in the directory.
+db/clean: db/CMakeFiles/mongo_db.dir/clean
+
+.PHONY : db/clean
+
+# Convenience name for "preinstall" pass in the directory.
+db/preinstall:
+
+.PHONY : db/preinstall
+
+#=============================================================================
+# Target rules for target db/CMakeFiles/mongo_db.dir
+
+# All Build rule for target.
+db/CMakeFiles/mongo_db.dir/all:
+	$(MAKE) -f db/CMakeFiles/mongo_db.dir/build.make db/CMakeFiles/mongo_db.dir/depend
+	$(MAKE) -f db/CMakeFiles/mongo_db.dir/build.make db/CMakeFiles/mongo_db.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=54,55 "Built target mongo_db"
+.PHONY : db/CMakeFiles/mongo_db.dir/all
+
+# Include target in all.
+all: db/CMakeFiles/mongo_db.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+db/CMakeFiles/mongo_db.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 db/CMakeFiles/mongo_db.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
+.PHONY : db/CMakeFiles/mongo_db.dir/rule
+
+# Convenience name for target.
+mongo_db: db/CMakeFiles/mongo_db.dir/rule
+
+.PHONY : mongo_db
+
+# clean rule for target.
+db/CMakeFiles/mongo_db.dir/clean:
+	$(MAKE) -f db/CMakeFiles/mongo_db.dir/build.make db/CMakeFiles/mongo_db.dir/clean
+.PHONY : db/CMakeFiles/mongo_db.dir/clean
+
+# clean rule for target.
+clean: db/CMakeFiles/mongo_db.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory zmqpp
+
+# Convenience name for "all" pass in the directory.
+zmqpp/all: zmqpp/CMakeFiles/zmqpp.dir/all
+zmqpp/all: zmqpp/CMakeFiles/zmqpp-static.dir/all
+
+.PHONY : zmqpp/all
+
+# Convenience name for "clean" pass in the directory.
+zmqpp/clean: zmqpp/CMakeFiles/zmqpp.dir/clean
+zmqpp/clean: zmqpp/CMakeFiles/zmqpp-static.dir/clean
+
+.PHONY : zmqpp/clean
+
+# Convenience name for "preinstall" pass in the directory.
+zmqpp/preinstall:
+
+.PHONY : zmqpp/preinstall
+
+#=============================================================================
+# Target rules for target zmqpp/CMakeFiles/zmqpp.dir
+
+# All Build rule for target.
+zmqpp/CMakeFiles/zmqpp.dir/all:
+	$(MAKE) -f zmqpp/CMakeFiles/zmqpp.dir/build.make zmqpp/CMakeFiles/zmqpp.dir/depend
+	$(MAKE) -f zmqpp/CMakeFiles/zmqpp.dir/build.make zmqpp/CMakeFiles/zmqpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=71,72,73,74,75,76,77,78,79,80,81,82,83,84,85 "Built target zmqpp"
+.PHONY : zmqpp/CMakeFiles/zmqpp.dir/all
+
+# Include target in all.
+all: zmqpp/CMakeFiles/zmqpp.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+zmqpp/CMakeFiles/zmqpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 15
+	$(MAKE) -f CMakeFiles/Makefile2 zmqpp/CMakeFiles/zmqpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
+.PHONY : zmqpp/CMakeFiles/zmqpp.dir/rule
+
+# Convenience name for target.
+zmqpp: zmqpp/CMakeFiles/zmqpp.dir/rule
+
+.PHONY : zmqpp
+
+# clean rule for target.
+zmqpp/CMakeFiles/zmqpp.dir/clean:
+	$(MAKE) -f zmqpp/CMakeFiles/zmqpp.dir/build.make zmqpp/CMakeFiles/zmqpp.dir/clean
+.PHONY : zmqpp/CMakeFiles/zmqpp.dir/clean
+
+# clean rule for target.
+clean: zmqpp/CMakeFiles/zmqpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target zmqpp/CMakeFiles/zmqpp-static.dir
+
+# All Build rule for target.
+zmqpp/CMakeFiles/zmqpp-static.dir/all:
+	$(MAKE) -f zmqpp/CMakeFiles/zmqpp-static.dir/build.make zmqpp/CMakeFiles/zmqpp-static.dir/depend
+	$(MAKE) -f zmqpp/CMakeFiles/zmqpp-static.dir/build.make zmqpp/CMakeFiles/zmqpp-static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target zmqpp-static"
+.PHONY : zmqpp/CMakeFiles/zmqpp-static.dir/all
+
+# Include target in all.
+all: zmqpp/CMakeFiles/zmqpp-static.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+zmqpp/CMakeFiles/zmqpp-static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 15
+	$(MAKE) -f CMakeFiles/Makefile2 zmqpp/CMakeFiles/zmqpp-static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
+.PHONY : zmqpp/CMakeFiles/zmqpp-static.dir/rule
+
+# Convenience name for target.
+zmqpp-static: zmqpp/CMakeFiles/zmqpp-static.dir/rule
+
+.PHONY : zmqpp-static
+
+# clean rule for target.
+zmqpp/CMakeFiles/zmqpp-static.dir/clean:
+	$(MAKE) -f zmqpp/CMakeFiles/zmqpp-static.dir/build.make zmqpp/CMakeFiles/zmqpp-static.dir/clean
+.PHONY : zmqpp/CMakeFiles/zmqpp-static.dir/clean
+
+# clean rule for target.
+clean: zmqpp/CMakeFiles/zmqpp-static.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/hashidsxx
+
+# Convenience name for "all" pass in the directory.
+src/hashidsxx/all: src/hashidsxx/CMakeFiles/hashidsxx.dir/all
+
+.PHONY : src/hashidsxx/all
+
+# Convenience name for "clean" pass in the directory.
+src/hashidsxx/clean: src/hashidsxx/CMakeFiles/hashidsxx.dir/clean
+
+.PHONY : src/hashidsxx/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/hashidsxx/preinstall:
+
+.PHONY : src/hashidsxx/preinstall
+
+#=============================================================================
+# Target rules for target src/hashidsxx/CMakeFiles/hashidsxx.dir
+
+# All Build rule for target.
+src/hashidsxx/CMakeFiles/hashidsxx.dir/all:
+	$(MAKE) -f src/hashidsxx/CMakeFiles/hashidsxx.dir/build.make src/hashidsxx/CMakeFiles/hashidsxx.dir/depend
+	$(MAKE) -f src/hashidsxx/CMakeFiles/hashidsxx.dir/build.make src/hashidsxx/CMakeFiles/hashidsxx.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles --progress-num=20,21,22 "Built target hashidsxx"
+.PHONY : src/hashidsxx/CMakeFiles/hashidsxx.dir/all
+
+# Include target in all.
+all: src/hashidsxx/CMakeFiles/hashidsxx.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/hashidsxx/CMakeFiles/hashidsxx.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 src/hashidsxx/CMakeFiles/hashidsxx.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/reza/development/conf-bank/v3/cb-daemon/cmake-build-debug/CMakeFiles 0
+.PHONY : src/hashidsxx/CMakeFiles/hashidsxx.dir/rule
+
+# Convenience name for target.
+hashidsxx: src/hashidsxx/CMakeFiles/hashidsxx.dir/rule
+
+.PHONY : hashidsxx
+
+# clean rule for target.
+src/hashidsxx/CMakeFiles/hashidsxx.dir/clean:
+	$(MAKE) -f src/hashidsxx/CMakeFiles/hashidsxx.dir/build.make src/hashidsxx/CMakeFiles/hashidsxx.dir/clean
+.PHONY : src/hashidsxx/CMakeFiles/hashidsxx.dir/clean
+
+# clean rule for target.
+clean: src/hashidsxx/CMakeFiles/hashidsxx.dir/clean
 
 .PHONY : clean
 

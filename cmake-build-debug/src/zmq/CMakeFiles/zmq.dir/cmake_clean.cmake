@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/zmq.dir/messaging_server.cpp.o"
+  "CMakeFiles/zmq.dir/request.cpp.o"
   "libzmq.pdb"
   "libzmq.a"
 )
